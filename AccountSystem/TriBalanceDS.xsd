@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TriBalanceDS" targetNamespace="http://tempuri.org/TriBalanceDS.xsd" xmlns:mstns="http://tempuri.org/TriBalanceDS.xsd" xmlns="http://tempuri.org/TriBalanceDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AccountSystem.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TriBalanceTableAdapter" GeneratorDataComponentClassName="TriBalanceTableAdapter" Name="TriBalance" UserDataComponentName="TriBalanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="SELECT TOP (100) PERCENT SUM(CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) END) AS OpenDr, SUM(CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) END) AS OpenCr, SUM(ISNULL(TriBalance.CurrtBalnDr, 0)) AS CurrtDr, SUM(ISNULL(TriBalance.CurrtBalnCr, 0)) AS CurrtCr, TblAccEntry.EntryAccName, TblAccSubHead.AccSubName, TblAccHead.AccHeadName, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(TblAccEntry.EntryAccCode AS varchar(4)), 4) AS entryCode, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4) AS SubAccCode, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(0 AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4) AS HeadCode, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END AS ConsDr, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END AS ConsCr, TriBalance.EntryAccID, SUM(ISNULL(TriBalance.OpenBalnDr, 0) - ISNULL(TriBalance.OpenBalnCr, 0)) AS Expr1, SUM(ISNULL(TriBalance.CurrtBalnDr, 0) - ISNULL(TriBalance.CurrtBalnCr, 0)) AS Expr2 FROM TriBalance INNER JOIN TblAccEntry ON TriBalance.EntryAccID = TblAccEntry.EntryAccID INNER JOIN TblAccSubHead ON TblAccEntry.AccSubID = TblAccSubHead.AccSubID INNER JOIN TblAccHead ON TblAccSubHead.AccHeadID = TblAccHead.AccHeadID GROUP BY TblAccEntry.EntryAccName, TblAccSubHead.AccSubName, TblAccHead.AccHeadName, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(TblAccEntry.EntryAccCode AS varchar(4)), 4), RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4), RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(0 AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4), TriBalance.EntryAccID, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END HAVING (SUM(ISNULL(TriBalance.OpenBalnDr, 0) - ISNULL(TriBalance.OpenBalnCr, 0)) &lt;&gt; 0) OR (SUM(ISNULL(TriBalance.CurrtBalnDr, 0) - ISNULL(TriBalance.CurrtBalnCr, 0)) &lt;&gt; 0) ORDER BY HeadCode, SubAccCode, entryCode" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SUM(OpenDr) AS OpenDr, SUM(OpenCr) AS OpenCr, SUM(CurrtDr) AS CurrtDr, SUM(CurrtCr) AS CurrtCr, EntryAccName, AccSubName, AccHeadName, entryCode, SubAccCode, HeadCode, SUM(ConsDr) AS ConsDr, SUM(ConsCr) 
+                         AS ConsCr, EntryAccID, SUM(Expr1) AS Expr1, SUM(Expr2) AS Expr2
+FROM            (SELECT        TOP (100) PERCENT SUM(CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) END) AS OpenDr, 
+                                                    SUM(CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0)) END) AS OpenCr, 
+                                                    SUM(ISNULL(TriBalance.CurrtBalnDr, 0)) AS CurrtDr, SUM(ISNULL(TriBalance.CurrtBalnCr, 0)) AS CurrtCr, TblAccEntry.EntryAccName, TblAccSubHead.AccSubName, TblAccHead.AccHeadName, RIGHT(REPLICATE('0', 
+                                                    2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) 
+                                                    + CAST(TblAccEntry.EntryAccCode AS varchar(4)), 4) AS entryCode, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) 
+                                                    + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4) AS SubAccCode, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) 
+                                                    + '-' + RIGHT(REPLICATE('0', 3) + CAST(0 AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4) AS HeadCode, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) 
+                                                    + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) 
+                                                    - isnull(TriBalance.CurrtBalnCr, 0)) END AS ConsDr, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) 
+                                                    &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END AS ConsCr, TriBalance.EntryAccID, 
+                                                    SUM(ISNULL(TriBalance.OpenBalnDr, 0) - ISNULL(TriBalance.OpenBalnCr, 0)) AS Expr1, SUM(ISNULL(TriBalance.CurrtBalnDr, 0) - ISNULL(TriBalance.CurrtBalnCr, 0)) AS Expr2
+                          FROM            TriBalance INNER JOIN
+                                                    TblAccEntry ON TriBalance.EntryAccID = TblAccEntry.EntryAccID INNER JOIN
+                                                    TblAccSubHead ON TblAccEntry.AccSubID = TblAccSubHead.AccSubID INNER JOIN
+                                                    TblAccHead ON TblAccSubHead.AccHeadID = TblAccHead.AccHeadID
+                          GROUP BY TblAccEntry.EntryAccName, TblAccSubHead.AccSubName, TblAccHead.AccHeadName, RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) 
+                                                    + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(TblAccEntry.EntryAccCode AS varchar(4)), 4), RIGHT(REPLICATE('0', 2) + CAST(TblAccHead.AccHeadCode AS varchar(2)), 
+                                                    2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(TblAccSubHead.AccSubCode AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4), RIGHT(REPLICATE('0', 2) 
+                                                    + CAST(TblAccHead.AccHeadCode AS varchar(2)), 2) + '-' + RIGHT(REPLICATE('0', 3) + CAST(0 AS varchar(3)), 3) + '-' + RIGHT(REPLICATE('0', 4) + CAST(0 AS varchar(4)), 4), TriBalance.EntryAccID, 
+                                                    CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &gt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) 
+                                                    - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) END, CASE WHEN (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) 
+                                                    + isnull(TriBalance.CurrtBalnDr, 0) - isnull(TriBalance.CurrtBalnCr, 0)) &lt; 0 THEN '' ELSE (isnull(TriBalance.OpenBalnDr, 0) - isnull(TriBalance.OpenBalnCr, 0) + isnull(TriBalance.CurrtBalnDr, 0) 
+                                                    - isnull(TriBalance.CurrtBalnCr, 0)) END
+                          HAVING         (SUM(ISNULL(TriBalance.OpenBalnDr, 0) - ISNULL(TriBalance.OpenBalnCr, 0)) &lt;&gt; 0) OR
+                                                    (SUM(ISNULL(TriBalance.CurrtBalnDr, 0) - ISNULL(TriBalance.CurrtBalnCr, 0)) &lt;&gt; 0)
+                          ORDER BY HeadCode, SubAccCode, entryCode) AS tb
+GROUP BY EntryAccName, AccSubName, AccHeadName, entryCode, SubAccCode, HeadCode, EntryAccID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OpenDr" DataSetColumn="OpenDr" />
+              <Mapping SourceColumn="OpenCr" DataSetColumn="OpenCr" />
+              <Mapping SourceColumn="CurrtDr" DataSetColumn="CurrtDr" />
+              <Mapping SourceColumn="CurrtCr" DataSetColumn="CurrtCr" />
+              <Mapping SourceColumn="EntryAccName" DataSetColumn="EntryAccName" />
+              <Mapping SourceColumn="AccSubName" DataSetColumn="AccSubName" />
+              <Mapping SourceColumn="AccHeadName" DataSetColumn="AccHeadName" />
+              <Mapping SourceColumn="entryCode" DataSetColumn="entryCode" />
+              <Mapping SourceColumn="SubAccCode" DataSetColumn="SubAccCode" />
+              <Mapping SourceColumn="HeadCode" DataSetColumn="HeadCode" />
+              <Mapping SourceColumn="ConsDr" DataSetColumn="ConsDr" />
+              <Mapping SourceColumn="ConsCr" DataSetColumn="ConsCr" />
+              <Mapping SourceColumn="EntryAccID" DataSetColumn="EntryAccID" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TriBalanceDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TriBalanceDS" msprop:Generator_UserDSName="TriBalanceDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TriBalance" msprop:Generator_TableClassName="TriBalanceDataTable" msprop:Generator_TableVarName="tableTriBalance" msprop:Generator_TablePropName="TriBalance" msprop:Generator_RowDeletingName="TriBalanceRowDeleting" msprop:Generator_RowChangingName="TriBalanceRowChanging" msprop:Generator_RowEvHandlerName="TriBalanceRowChangeEventHandler" msprop:Generator_RowDeletedName="TriBalanceRowDeleted" msprop:Generator_UserTableName="TriBalance" msprop:Generator_RowChangedName="TriBalanceRowChanged" msprop:Generator_RowEvArgName="TriBalanceRowChangeEvent" msprop:Generator_RowClassName="TriBalanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OpenDr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOpenDr" msprop:Generator_ColumnPropNameInRow="OpenDr" msprop:Generator_ColumnPropNameInTable="OpenDrColumn" msprop:Generator_UserColumnName="OpenDr" type="xs:double" minOccurs="0" />
+              <xs:element name="OpenCr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOpenCr" msprop:Generator_ColumnPropNameInRow="OpenCr" msprop:Generator_ColumnPropNameInTable="OpenCrColumn" msprop:Generator_UserColumnName="OpenCr" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrtDr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCurrtDr" msprop:Generator_ColumnPropNameInRow="CurrtDr" msprop:Generator_ColumnPropNameInTable="CurrtDrColumn" msprop:Generator_UserColumnName="CurrtDr" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrtCr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCurrtCr" msprop:Generator_ColumnPropNameInRow="CurrtCr" msprop:Generator_ColumnPropNameInTable="CurrtCrColumn" msprop:Generator_UserColumnName="CurrtCr" type="xs:double" minOccurs="0" />
+              <xs:element name="EntryAccName" msprop:Generator_ColumnVarNameInTable="columnEntryAccName" msprop:Generator_ColumnPropNameInRow="EntryAccName" msprop:Generator_ColumnPropNameInTable="EntryAccNameColumn" msprop:Generator_UserColumnName="EntryAccName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccSubName" msprop:Generator_ColumnVarNameInTable="columnAccSubName" msprop:Generator_ColumnPropNameInRow="AccSubName" msprop:Generator_ColumnPropNameInTable="AccSubNameColumn" msprop:Generator_UserColumnName="AccSubName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccHeadName" msprop:Generator_ColumnVarNameInTable="columnAccHeadName" msprop:Generator_ColumnPropNameInRow="AccHeadName" msprop:Generator_ColumnPropNameInTable="AccHeadNameColumn" msprop:Generator_UserColumnName="AccHeadName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="entryCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnentryCode" msprop:Generator_ColumnPropNameInRow="entryCode" msprop:Generator_ColumnPropNameInTable="entryCodeColumn" msprop:Generator_UserColumnName="entryCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubAccCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSubAccCode" msprop:Generator_ColumnPropNameInRow="SubAccCode" msprop:Generator_ColumnPropNameInTable="SubAccCodeColumn" msprop:Generator_UserColumnName="SubAccCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeadCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHeadCode" msprop:Generator_ColumnPropNameInRow="HeadCode" msprop:Generator_ColumnPropNameInTable="HeadCodeColumn" msprop:Generator_UserColumnName="HeadCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConsDr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsDr" msprop:Generator_ColumnPropNameInRow="ConsDr" msprop:Generator_ColumnPropNameInTable="ConsDrColumn" msprop:Generator_UserColumnName="ConsDr" type="xs:double" minOccurs="0" />
+              <xs:element name="ConsCr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsCr" msprop:Generator_ColumnPropNameInRow="ConsCr" msprop:Generator_ColumnPropNameInTable="ConsCrColumn" msprop:Generator_UserColumnName="ConsCr" type="xs:double" minOccurs="0" />
+              <xs:element name="EntryAccID" msprop:Generator_ColumnVarNameInTable="columnEntryAccID" msprop:Generator_ColumnPropNameInRow="EntryAccID" msprop:Generator_ColumnPropNameInTable="EntryAccIDColumn" msprop:Generator_UserColumnName="EntryAccID" type="xs:int" />
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LadgerDataSet" targetNamespace="http://tempuri.org/LadgerDataSet.xsd" xmlns:mstns="http://tempuri.org/LadgerDataSet.xsd" xmlns="http://tempuri.org/LadgerDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AccountSystem.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        LadgerView.edate, LadgerView.VNo, LadgerView.Des, LadgerView.Dr, LadgerView.Cr, LadgerView.Totals, TblAccEntry.EntryAccName AS AccName, LadgerView.VID, LadgerView.Product, LadgerView.Qty, LadgerView.Rate, 
+                         LadgerView.Disct, LadgerView.Typ, LadgerView.vnum, LadgerView.Stat, LadgerView.AccID, LadgerView.Acc1, LadgerView.Acc2, LadgerView.Acc3
+FROM            LadgerView INNER JOIN
+                         TblAccEntry ON LadgerView.AccID = TblAccEntry.EntryAccID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="edate" DataSetColumn="edate" />
+              <Mapping SourceColumn="VNo" DataSetColumn="VNo" />
+              <Mapping SourceColumn="Des" DataSetColumn="Des" />
+              <Mapping SourceColumn="Dr" DataSetColumn="Dr" />
+              <Mapping SourceColumn="Cr" DataSetColumn="Cr" />
+              <Mapping SourceColumn="Totals" DataSetColumn="Totals" />
+              <Mapping SourceColumn="AccName" DataSetColumn="AccName" />
+              <Mapping SourceColumn="VID" DataSetColumn="VID" />
+              <Mapping SourceColumn="Product" DataSetColumn="Product" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Rate" DataSetColumn="Rate" />
+              <Mapping SourceColumn="Disct" DataSetColumn="Disct" />
+              <Mapping SourceColumn="Typ" DataSetColumn="Typ" />
+              <Mapping SourceColumn="vnum" DataSetColumn="vnum" />
+              <Mapping SourceColumn="Stat" DataSetColumn="Stat" />
+              <Mapping SourceColumn="AccID" DataSetColumn="AccID" />
+              <Mapping SourceColumn="Acc1" DataSetColumn="Acc1" />
+              <Mapping SourceColumn="Acc2" DataSetColumn="Acc2" />
+              <Mapping SourceColumn="Acc3" DataSetColumn="Acc3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LadgerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LadgerDataSet" msprop:Generator_UserDSName="LadgerDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="edate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnedate" msprop:Generator_ColumnPropNameInRow="edate" msprop:Generator_ColumnPropNameInTable="edateColumn" msprop:Generator_UserColumnName="edate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVNo" msprop:Generator_ColumnPropNameInRow="VNo" msprop:Generator_ColumnPropNameInTable="VNoColumn" msprop:Generator_UserColumnName="VNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Des" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDes" msprop:Generator_ColumnPropNameInRow="Des" msprop:Generator_ColumnPropNameInTable="DesColumn" msprop:Generator_UserColumnName="Des" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDr" msprop:Generator_ColumnPropNameInRow="Dr" msprop:Generator_ColumnPropNameInTable="DrColumn" msprop:Generator_UserColumnName="Dr" type="xs:double" minOccurs="0" />
+              <xs:element name="Cr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCr" msprop:Generator_ColumnPropNameInRow="Cr" msprop:Generator_ColumnPropNameInTable="CrColumn" msprop:Generator_UserColumnName="Cr" type="xs:double" minOccurs="0" />
+              <xs:element name="Totals" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotals" msprop:Generator_ColumnPropNameInRow="Totals" msprop:Generator_ColumnPropNameInTable="TotalsColumn" msprop:Generator_UserColumnName="Totals" type="xs:double" minOccurs="0" />
+              <xs:element name="AccName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAccName" msprop:Generator_ColumnPropNameInRow="AccName" msprop:Generator_ColumnPropNameInTable="AccNameColumn" msprop:Generator_UserColumnName="AccName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VID" msprop:Generator_ColumnVarNameInTable="columnVID" msprop:Generator_ColumnPropNameInRow="VID" msprop:Generator_ColumnPropNameInTable="VIDColumn" msprop:Generator_UserColumnName="VID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product" msprop:Generator_ColumnVarNameInTable="columnProduct" msprop:Generator_ColumnPropNameInRow="Product" msprop:Generator_ColumnPropNameInTable="ProductColumn" msprop:Generator_UserColumnName="Product" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" msprop:Generator_UserColumnName="Rate" type="xs:double" minOccurs="0" />
+              <xs:element name="Disct" msprop:Generator_ColumnVarNameInTable="columnDisct" msprop:Generator_ColumnPropNameInRow="Disct" msprop:Generator_ColumnPropNameInTable="DisctColumn" msprop:Generator_UserColumnName="Disct" type="xs:double" minOccurs="0" />
+              <xs:element name="Typ" msprop:Generator_ColumnVarNameInTable="columnTyp" msprop:Generator_ColumnPropNameInRow="Typ" msprop:Generator_ColumnPropNameInTable="TypColumn" msprop:Generator_UserColumnName="Typ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vnum" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnvnum" msprop:Generator_ColumnPropNameInRow="vnum" msprop:Generator_ColumnPropNameInTable="vnumColumn" msprop:Generator_UserColumnName="vnum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stat" msprop:Generator_ColumnVarNameInTable="columnStat" msprop:Generator_ColumnPropNameInRow="Stat" msprop:Generator_ColumnPropNameInTable="StatColumn" msprop:Generator_UserColumnName="Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="AccID" msprop:Generator_ColumnVarNameInTable="columnAccID" msprop:Generator_ColumnPropNameInRow="AccID" msprop:Generator_ColumnPropNameInTable="AccIDColumn" msprop:Generator_UserColumnName="AccID" type="xs:int" minOccurs="0" />
+              <xs:element name="Acc1" msprop:Generator_ColumnVarNameInTable="columnAcc1" msprop:Generator_ColumnPropNameInRow="Acc1" msprop:Generator_ColumnPropNameInTable="Acc1Column" msprop:Generator_UserColumnName="Acc1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Acc2" msprop:Generator_ColumnVarNameInTable="columnAcc2" msprop:Generator_ColumnPropNameInRow="Acc2" msprop:Generator_ColumnPropNameInTable="Acc2Column" msprop:Generator_UserColumnName="Acc2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Acc3" msprop:Generator_ColumnVarNameInTable="columnAcc3" msprop:Generator_ColumnPropNameInRow="Acc3" msprop:Generator_ColumnPropNameInTable="Acc3Column" msprop:Generator_UserColumnName="Acc3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

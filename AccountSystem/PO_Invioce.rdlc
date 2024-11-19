@@ -1,0 +1,3853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="Purch_Invioce">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>9ac6bc1c-a574-4130-a774-3222c1405d74</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="ContactName">
+          <DataField>ContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactAddress">
+          <DataField>ContactAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Contact_no">
+          <DataField>Contact_no</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Purch_date">
+          <DataField>Purch_date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Purch_bill_no">
+          <DataField>Purch_bill_no</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Purch_On">
+          <DataField>Purch_On</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Prod_name">
+          <DataField>Prod_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Barcode">
+          <DataField>Barcode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QtyT">
+          <DataField>QtyT</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RateT">
+          <DataField>RateT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Unit_title">
+          <DataField>Unit_title</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SNO">
+          <DataField>SNO</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Remarks">
+          <DataField>Remarks</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bns">
+          <DataField>Bns</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Disct">
+          <DataField>Disct</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Purch_Invioce</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Purch_Invioce</rd:DataSetName>
+        <rd:SchemaPath>E:\Software Devolopments\Dot Net\VFMS\Inv System - VT\CS\Purch_Invioce.xsd</rd:SchemaPath>
+        <rd:TableName>DataTable1</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>DataTable1TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DataSet2">
+      <Fields>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Phone">
+          <DataField>Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Purch_Invioce</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>CompanyLogo</rd:DataSetName>
+        <rd:SchemaPath>E:\Software Devolopments\Dot Net\Accounting+Inv System\CS\CompanyLogo.xsd</rd:SchemaPath>
+        <rd:TableName>TblCompany</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName>TblCompanyTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>0.41278in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.91662in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.42049in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.59741in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.52384in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.68088in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.74639in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.69811in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.83333in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.7534in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.38542in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox23">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>S.No.</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox23</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Item Name</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>QTY</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Unit</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox28">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Rate</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox28</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox31">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Bonus</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>/Scheme</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox31</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Grass Amount</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox32">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Disc %</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox32</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox34">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Disc Amount</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox34</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox37">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Net Amount</Value>
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox37</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>Gray</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox24">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=RunningValue(int(Fields!SNO.Value),Sum,"Group1")</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox24</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Prod_name">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Prod_name.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Prod_name</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="QtyT">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!QtyT.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>QtyT</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Unit_title">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Unit_title.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Unit_title</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="RateT">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!RateT.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>RateT</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Bns">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Bns.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Bns</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!QtyT.Value*Fields!RateT.Value</Value>
+                              <Style>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Disct">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Disct.Value</Value>
+                              <Style>
+                                <Format>0.00'%</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Disct</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox35">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!QtyT.Value*Fields!RateT.Value*Fields!Disct.Value/100</Value>
+                              <Style>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox35</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox38">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=(Fields!QtyT.Value*Fields!RateT.Value)-(Fields!QtyT.Value*Fields!RateT.Value*Fields!Disct.Value/100)</Value>
+                              <Style>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox38</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.23958in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox29">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Total</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox29</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="QtyT1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!QtyT.Value)</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>QtyT1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox56">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox56</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Bns1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Bns.Value)</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Bns1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox42">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=sum(Fields!QtyT.Value*Fields!RateT.Value)</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox42</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox43">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox43</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox44">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=sum(Fields!QtyT.Value*Fields!RateT.Value*Fields!Disct.Value/100)</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox44</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox39">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=sum((Fields!QtyT.Value*Fields!RateT.Value)-(Fields!QtyT.Value*Fields!RateT.Value*Fields!Disct.Value/100))</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,#</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox39</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(sum(Fields!Bns.Value)=0,true,false)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(sum(Fields!Disct.Value)=0,true,false)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(sum(Fields!Disct.Value)=0,true,false)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(sum(Fields!Disct.Value)=0,true,false)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember>
+              <Group Name="Group1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ContactName.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!ContactName.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>0.025in</Top>
+        <Height>0.875in</Height>
+        <Width>7.58325in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="Remarks">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Remarks.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Remarks</rd:DefaultName>
+        <Top>0.91959in</Top>
+        <Left>0.55369in</Left>
+        <Height>0.37153in</Height>
+        <Width>5.65263in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox46">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Note:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox46</rd:DefaultName>
+        <Top>0.91959in</Top>
+        <Height>0.20833in</Height>
+        <Width>0.45833in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>1.29112in</Height>
+    <Style />
+  </Body>
+  <Code>  Dim I As Integer
+    Dim J As Integer
+    Dim F As Integer
+    Dim DataToPrint As String
+    Dim OnlyCorrectData As String
+    Dim PrintableString As String
+    Dim Encoding As String
+    Dim WeightedTotal As Long
+    Dim WeightValue As Integer
+    Dim CurrentValue As Long
+    Dim CheckDigitValue As Integer
+    Dim Factor As Integer
+    Dim CheckDigit As Integer
+    Dim CurrentEncoding As String
+    Dim NewLine As String
+    Dim msg As String
+    Dim CurrentChar As String
+    Dim CurrentCharNum As Integer
+    Dim C128_StartA As String
+    Dim C128_StartB As String
+    Dim C128_StartC As String
+    Dim C128_Stop As String
+    Dim C128Start As String
+    Dim C128CheckDigit As String
+    Dim StartCode As String
+    Dim StopCode As String
+    Dim Fnc1 As String
+    Dim LeadingDigit As Integer
+    Dim EAN2AddOn As String
+    Dim EAN5AddOn As String
+    Dim EANAddOnToPrint As String
+    Dim HumanReadableText As String
+    Dim StringLength As Integer
+    Dim CorrectFNC As Integer
+    Dim CID As Integer
+    Dim FID As Integer
+    Dim NCID As Integer
+    Dim SetAry() As String
+    Public Function Code128(ByVal DataToFormat As String, Optional ByVal ReturnType As Integer = 0, Optional ByVal ApplyTilde As Boolean = False) As String
+        CID = 0 'Character ID
+        NCID = 0 'Numbers Character ID (for set C)
+        FID = 0 'Function ID used for start, stop and check characters
+        If ReturnType = 6 Or ReturnType = 7 Then CID = 11000
+        If ReturnType = 8 Then CID = 11300
+        If ReturnType = 9 Then CID = 11500
+        If ReturnType = 6 Or ReturnType = 9 Then FID = 11500
+        If ReturnType = 7 Or ReturnType = 8 Then FID = 11300
+        If ReturnType = 6 Or ReturnType = 7 Then NCID = 12000
+        If ReturnType = 8 Then NCID = 11300
+        If ReturnType = 9 Then NCID = 11500
+        Dim SetString As String
+
+        Dim DataToEncode As String
+        CorrectFNC = 0
+        PrintableString = ""
+        DataToEncode = ""
+        SetString = ""
+        'ProcessTilde was modified to support ReturnTypes 6-9 and
+        'support using ( and ) to define AIs for GS1-128
+        If ApplyTilde Then DataToFormat = ProcessTilde(DataToFormat)
+
+        If ReturnType = 0 Or ReturnType = 2 Or ReturnType &gt; 5 Then
+
+            SetAry = {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"}
+            CurrentChar = Left(DataToFormat, 1)
+            CurrentCharNum = AscW(CurrentChar)
+            StringLength = Len(DataToFormat)
+            C128Start = ChrW(204 + FID)
+            If CurrentCharNum &lt; 32 Then C128Start = ChrW(203 + FID)
+            If CurrentCharNum &gt; 31 And CurrentCharNum &lt; 127 Then C128Start = ChrW(204 + FID)
+            If ((StringLength &gt; 3) And IsNumeric(Mid(DataToFormat, 1, 4))) Then C128Start = ChrW(205 + FID)
+            '202 &amp; 212-215 is for the FNC1, with this Start C is mandatory
+            If CurrentCharNum = 197 Then C128Start = ChrW(204 + FID)
+            If CurrentCharNum &gt; 201 Then C128Start = ChrW(205 + FID)
+            If C128Start = ChrW(203 + FID) Then CurrentEncoding = "A"
+            If C128Start = ChrW(204 + FID) Then CurrentEncoding = "B"
+            If C128Start = ChrW(205 + FID) Then CurrentEncoding = "C"
+            'The next line was added to support ReturnTypes 6-9
+            J = 0
+            For I = 1 To StringLength
+                'The next line was added to support ReturnTypes 6-9
+                J = J + 1
+                'Check for FNC1 in any set which is ASCII 202 and ASCII 212-217
+                CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+
+                If CurrentCharNum &gt; 201 Then
+                    'The next 5 lines were added to support ReturnTypes 6-9
+                    'Switch to set C if not already in it BEFORE the AI
+                    'Change SetAry(J) to B so the number 99 does not show up for the set switch
+                    If CurrentEncoding &lt;&gt; "C" Then
+                        SetAry(J) = "B"
+                        DataToEncode = DataToEncode &amp; ChrW(199)
+                        J = J + 1
+                        CurrentEncoding = "C"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(202)
+                    'The next 14 lines were added to support ReturnTypes 6-9
+                    'Change SetAry(J) to B so the number 99 does not show up for the AI
+                    SetAry(J) = "B"
+                    If CurrentCharNum &gt; 211 Then
+                        'Change SetAry to reflect the location of proper HR text
+                        'E indicates the ) is at the end of a number pair instead of the Middle
+                        If CurrentCharNum = 212 Then SetAry(J + 1) = "E"
+                        If CurrentCharNum = 213 Then SetAry(J + 2) = "M"
+                        If CurrentCharNum = 214 Then SetAry(J + 2) = "E"
+                        If CurrentCharNum = 215 Then SetAry(J + 3) = "M"
+                        If CurrentCharNum = 216 Then SetAry(J + 3) = "E"
+                        If CurrentCharNum = 217 Then SetAry(J + 4) = "M"
+                    End If
+                    'Check for switching
+                ElseIf CurrentCharNum = 195 Then
+                    If CurrentEncoding = "C" Then
+                        DataToEncode = DataToEncode &amp; ChrW(200)
+                        'The next line was added to support ReturnTypes 6-9
+                        If SetAry(J) = "0" Then SetAry(J) = "B"
+                        CurrentEncoding = "B"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(195)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = "B"
+                ElseIf CurrentCharNum = 196 Then
+                    If CurrentEncoding = "C" Then
+                        DataToEncode = DataToEncode &amp; ChrW(200)
+                        'The next line was added to support ReturnTypes 6-9
+                        If SetAry(J) = "0" Then SetAry(J) = "B"
+                        CurrentEncoding = "B"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(196)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = "B"
+                ElseIf CurrentCharNum = 197 Then
+                    If CurrentEncoding = "C" Then
+                        DataToEncode = DataToEncode &amp; ChrW(200)
+                        'The next line was added to support ReturnTypes 6-9
+                        If SetAry(J) = "0" Then SetAry(J) = "B"
+                        CurrentEncoding = "B"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(197)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = "B"
+                ElseIf CurrentCharNum = 198 Then
+                    If CurrentEncoding = "C" Then
+                        DataToEncode = DataToEncode &amp; ChrW(200)
+                        'The next line was added to support ReturnTypes 6-9
+                        If SetAry(J) = "0" Then SetAry(J) = "B"
+                        CurrentEncoding = "B"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(198)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = "B"
+                ElseIf CurrentCharNum = 200 Then
+                    If CurrentEncoding = "C" Then
+                        DataToEncode = DataToEncode &amp; ChrW(200)
+                        'The next line was added to support ReturnTypes 6-9
+                        If SetAry(J) = "0" Then SetAry(J) = "B"
+                        CurrentEncoding = "B"
+                    End If
+                    DataToEncode = DataToEncode &amp; ChrW(200)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = "B"
+                ElseIf ((I &lt; StringLength - 2) And (IsNumeric(Mid(DataToFormat, I, 1))) And (IsNumeric(Mid(DataToFormat, I + 1, 1))) And (IsNumeric(Mid(DataToFormat, I, 4)))) Or ((I &lt; StringLength) And (IsNumeric(Mid(DataToFormat, I, 1))) And (IsNumeric(Mid(DataToFormat, I + 1, 1))) And (CurrentEncoding = "C")) Then
+                    'check to see if there is an odd number of digits to encode,
+                    'if so stay in current set for 1 number and then switch to save space
+                    'This IF statement was modified to support ReturnTypes 6-9; changed counter variable name from J to F
+                    If CurrentEncoding &lt;&gt; "C" Then
+                        F = I
+                        Factor = 3
+                        Do While F &lt;= StringLength And IsNumeric(Mid(DataToFormat, F, 1))
+                            Factor = 4 - Factor
+                            F = F + 1
+                        Loop
+                        If Factor = 1 Then
+                            'if so stay in current set for 1 character to save space
+                            DataToEncode = DataToEncode &amp; ChrW(CurrentCharNum)
+                            'The next line was added to support ReturnTypes 6-9
+                            If SetAry(J) = "0" Then SetAry(J) = CurrentEncoding
+                            I = I + 1
+                            J = J + 1
+                        End If
+                    End If
+                    'Switch to set C if not already in it
+                    If CurrentEncoding &lt;&gt; "C" Then DataToEncode = DataToEncode &amp; ChrW(199)
+                    'The next 2 lines of code were added to support ReturnTypes 6-9
+                    'Sets the encoding in SetAry to the previous mode to keep switch characters from showing up in HR text.
+                    If CurrentEncoding &lt;&gt; "C" Then SetAry(J) = CurrentEncoding
+                    If CurrentEncoding &lt;&gt; "C" Then J = J + 1
+                    CurrentEncoding = "C"
+                    CurrentChar = (Mid(DataToFormat, I, 2))
+                    CurrentValue = Val(CurrentChar)
+                    'Set the CurrentValue to the number of String CurrentChar
+                    If (CurrentValue &lt; 95 And CurrentValue &gt; 0) Then DataToEncode = DataToEncode &amp; ChrW(CurrentValue + 32)
+                    If CurrentValue &gt; 94 Then DataToEncode = DataToEncode &amp; ChrW(CurrentValue + 100)
+                    If CurrentValue = 0 Then DataToEncode = DataToEncode &amp; ChrW(194)
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = CurrentEncoding
+                    I = I + 1
+                    'Check for switching to character set A
+                ElseIf (I &lt;= StringLength) And ((AscW(Mid(DataToFormat, I, 1)) &lt; 31) Or ((CurrentEncoding = "A") And (AscW(Mid(DataToFormat, I, 1)) &gt; 32 And (AscW(Mid(DataToFormat, I, 1))) &lt; 96))) Then
+                    'Switch to set A if not already in it
+                    If CurrentEncoding &lt;&gt; "A" Then DataToEncode = DataToEncode &amp; ChrW(201)
+                    'The next 2 lines were added to support ReturnTypes 6-9
+                    If CurrentEncoding &lt;&gt; "A" Then SetAry(J) = "A"
+                    If CurrentEncoding &lt;&gt; "A" Then J = J + 1
+                    CurrentEncoding = "A"
+                    'Get the ASCII value of the next character
+                    CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+                    If CurrentCharNum = 32 Then
+                        DataToEncode = DataToEncode &amp; ChrW(194)
+                    ElseIf CurrentCharNum &lt; 32 Then
+                        DataToEncode = DataToEncode &amp; ChrW(CurrentCharNum + 96)
+                    ElseIf CurrentCharNum &gt; 32 Then
+                        DataToEncode = DataToEncode &amp; ChrW(CurrentCharNum)
+                    End If
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = CurrentEncoding
+                    'Check for switching to character set B
+                ElseIf (I &lt;= StringLength) And ((AscW(Mid(DataToFormat, I, 1))) &gt; 31 And (AscW(Mid(DataToFormat, I, 1)))) &lt; 127 Then
+                    'Switch to set B if not already in it
+                    If CurrentEncoding &lt;&gt; "B" Then DataToEncode = DataToEncode &amp; ChrW(200)
+                    'The next 2 lines were added to support ReturnTypes 6-9
+                    If CurrentEncoding &lt;&gt; "B" Then SetAry(J) = "B"
+                    If CurrentEncoding &lt;&gt; "B" Then J = J + 1
+                    'J = J + 1
+                    CurrentEncoding = "B"
+                    'Get the ASCII value of the next character
+                    CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+                    If CurrentCharNum = 32 Then
+                        DataToEncode = DataToEncode &amp; ChrW(194)
+                    Else
+                        DataToEncode = DataToEncode &amp; ChrW(CurrentCharNum)
+                    End If
+                    'The next line was added to support ReturnTypes 6-9
+                    If SetAry(J) = "0" Then SetAry(J) = CurrentEncoding
+                End If
+            Next I
+        End If
+
+        'FORMAT TEXT FOR AIs
+        If ReturnType = 1 Then
+            'ReturnType 1 = format the data for human readable text only
+            HumanReadableText = ""
+            StringLength = Len(DataToFormat)
+            For I = 1 To StringLength
+                CorrectFNC = 0
+                'Get ASCII value of each character
+                CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+                'Check for FNC1
+                If ((I &lt; StringLength - 2) And ((CurrentCharNum = 202) Or ((CurrentCharNum &gt; 211) And (CurrentCharNum &lt; 219)))) Then
+                    '2005.12 BDA updated the next if/else to eliminate errors from text after the AI
+                    'It appears that there is an AI
+                    'Get the value of the next 2 digits to try to determine the length of the AI, if text is used here
+                    'Set this value to 81 for a 4 digit AI
+                    If IsNumeric(Mid(DataToFormat, I + 1, 1)) And IsNumeric(Mid(DataToFormat, I + 2, 1)) Then
+                        CurrentChar = Mid(DataToFormat, I + 1, 2)
+                        CurrentCharNum = Val(CurrentChar)
+                    Else
+                        CurrentCharNum = 81
+                    End If
+                    'Is 2 digit AI by entering ASCII 212?
+                    If ((CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 212)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 2)) &amp; ") "
+                        I = I + 2
+                        CorrectFNC = 1
+                        'Is 3 digit AI by entering ASCII 213?
+                    ElseIf ((I &lt; StringLength - 3) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 213)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 3)) &amp; ") "
+                        I = I + 3
+                        CorrectFNC = 1
+                        'Is 4 digit AI by entering ASCII 214?
+                    ElseIf ((I &lt; StringLength - 4) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 214)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 4)) &amp; ") "
+                        I = I + 4
+                        CorrectFNC = 1
+                        'Is 5 digit AI by entering ASCII 215?
+                    ElseIf ((I &lt; StringLength - 5) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 215)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 5)) &amp; ") "
+                        I = I + 5
+                        CorrectFNC = 1
+                        'Is 6 digit AI by entering ASCII 216?
+                    ElseIf ((I &lt; StringLength - 6) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 216)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 6)) &amp; ") "
+                        I = I + 6
+                        CorrectFNC = 1
+                        'Is 7 digit AI by entering ASCII 217?
+                    ElseIf ((I &lt; StringLength - 7) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 217)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 7)) &amp; ") "
+                        I = I + 7
+                        CorrectFNC = 1
+                        'Is 8 digit AI by entering ASCII 218?
+                    ElseIf ((I &lt; StringLength - 8) And (CorrectFNC = 0) And (AscW(Mid(DataToFormat, I, 1)) = 218)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 8)) &amp; ") "
+                        I = I + 8
+                        CorrectFNC = 1
+                        'Is 4 digit AI by detection?
+                    ElseIf ((I &lt; StringLength - 4) And (CorrectFNC = 0) And ((CurrentCharNum &lt;= 81 And CurrentCharNum &gt;= 80) Or (CurrentCharNum &lt;= 34 And CurrentCharNum &gt;= 31))) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 4)) &amp; ") "
+                        I = I + 4
+                        CorrectFNC = 1
+                        'Is 3 digit AI by detection?
+                    ElseIf ((I &lt; StringLength - 3) And (CorrectFNC = 0) And ((CurrentCharNum &lt;= 49 And CurrentCharNum &gt;= 40) Or (CurrentCharNum &lt;= 25 And CurrentCharNum &gt;= 23))) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 3)) &amp; ") "
+                        I = I + 3
+                        CorrectFNC = 1
+                        'Is 2 digit AI by detection?
+                    ElseIf ((CurrentCharNum &lt;= 30 And (CorrectFNC = 0) And CurrentCharNum &gt;= 0) Or (CurrentCharNum &lt;= 99 And CurrentCharNum &gt;= 90)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 2)) &amp; ") "
+                        I = I + 2
+                        CorrectFNC = 1
+                        'If no AI was detected, set default to 4 digit AI:
+                    ElseIf ((I &lt; StringLength - 4) And (CorrectFNC = 0)) Then
+                        HumanReadableText = HumanReadableText &amp; " (" &amp; (Mid(DataToFormat, I + 1, 4)) &amp; ") "
+                        I = I + 4
+                        CorrectFNC = 1
+                    End If
+                ElseIf (AscW(Mid(DataToFormat, I, 1)) &lt; 32) Then
+                    HumanReadableText = HumanReadableText &amp; " "
+                ElseIf ((AscW(Mid(DataToFormat, I, 1)) &gt; 31) And (AscW(Mid(DataToFormat, I, 1)) &lt; 128)) Then
+                    HumanReadableText = HumanReadableText &amp; Mid(DataToFormat, I, 1)
+                End If
+            Next I
+        End If
+
+        'The next line was modified to support ReturnTypes 3-5
+        If ReturnType &gt; 2 And ReturnType &lt; 6 Then
+            'ReturnType 3, 4 or 5 = format the data for human readable text only
+            'inserting a space for every 3, 4 or 5 characters
+            HumanReadableText = ""
+            StringLength = Len(DataToFormat)
+            J = 0
+            For I = 1 To StringLength
+                CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+                If CurrentCharNum &gt; 31 And CurrentCharNum &lt; 128 Then
+                    HumanReadableText = HumanReadableText &amp; Mid(DataToFormat, I, 1)
+                    J = J + 1
+                End If
+                If (J Mod ReturnType) = 0 Then HumanReadableText = HumanReadableText &amp; " "
+            Next I
+        End If
+
+        If ReturnType = 0 Or ReturnType = 2 Or ReturnType &gt; 5 Then
+            DataToFormat = ""
+            'The next line was modified to support ReturnTypes 6-9
+            WeightedTotal = AscW(C128Start) - (FID + 100)
+            StringLength = Len(DataToEncode)
+            For I = 1 To StringLength
+                CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+                If CurrentCharNum &lt; 135 Then CurrentValue = CurrentCharNum - 32
+                If CurrentCharNum &gt; 134 Then CurrentValue = CurrentCharNum - 100
+                If CurrentCharNum = 194 Then CurrentValue = 0
+                CurrentValue = CurrentValue * I
+                WeightedTotal = WeightedTotal + CurrentValue
+                If CurrentCharNum = 32 Then CurrentCharNum = 194
+                'The next 10 lines were modified/added to support ReturnTypes 6-9
+                'so that set C characters show the correct HR number pairs
+                If ReturnType &gt; 5 And SetAry(I) = "C" Then
+                    PrintableString = PrintableString &amp; ChrW(CurrentCharNum + NCID)
+                ElseIf (ReturnType = 6 Or ReturnType = 7) And SetAry(I) = "E" Then
+                    PrintableString = PrintableString &amp; ChrW(CurrentCharNum + 10500)
+                ElseIf (ReturnType = 6 Or ReturnType = 7) And SetAry(I) = "M" Then
+                    PrintableString = PrintableString &amp; ChrW(CurrentCharNum + 10700)
+                Else
+                    PrintableString = PrintableString &amp; ChrW(CurrentCharNum + CID)
+                End If
+            Next I
+            CheckDigitValue = (WeightedTotal Mod 103)
+            If CheckDigitValue &lt; 95 And CheckDigitValue &gt; 0 Then C128CheckDigit = ChrW(CheckDigitValue + 32 + FID)
+            If CheckDigitValue &gt; 94 Then C128CheckDigit = ChrW(CheckDigitValue + 100 + FID)
+            If CheckDigitValue = 0 Then C128CheckDigit = ChrW(194 + FID)
+        End If
+
+        DataToEncode = ""
+        'ReturnType 0 returns data formatted to the barcode font
+        If ReturnType = 0 Or ReturnType &gt; 2 Then Code128 = C128Start &amp; PrintableString &amp; C128CheckDigit &amp; ChrW(206 + FID)
+        'ReturnType 1 returns data formatted for human readable text
+        If ReturnType = 1 Then Code128 = HumanReadableText
+        'ReturnType 2 returns the check digit for the data supplied
+        If ReturnType = 2 Then Code128 = C128CheckDigit
+    End Function
+
+
+    Public Function Code128a(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+
+        'The next 7 lines were added to support ReturnTypes 6-9
+        CID = 0 'Character ID
+        FID = 0 'Function ID used for start, stop and check characters
+        If ReturnType = 6 Or ReturnType = 7 Then CID = 11000
+        If ReturnType = 8 Then CID = 11300
+        If ReturnType = 9 Then CID = 11500
+        If ReturnType = 6 Or ReturnType = 9 Then FID = 11500
+        If ReturnType = 7 Or ReturnType = 8 Then FID = 11300
+        PrintableString = ""
+        WeightedTotal = 103
+        PrintableString = ChrW(203 + FID)
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &lt; 135 Then CurrentValue = CurrentCharNum - 32
+            If CurrentCharNum &gt; 134 Then CurrentValue = CurrentCharNum - 100
+            CurrentValue = CurrentValue * I
+            WeightedTotal = WeightedTotal + CurrentValue
+            If CurrentCharNum = 32 Then CurrentCharNum = 194
+            'The next 6 lines include updates to support ReturnTypes 6 and 7
+            'This update keeps control characters out of HR text.
+            If (ReturnType = 6 Or ReturnType = 7) And (CurrentCharNum &gt; 95) Then
+                PrintableString = PrintableString &amp; ChrW(CurrentCharNum + 11500)
+            Else
+                PrintableString = PrintableString &amp; ChrW(CurrentCharNum + CID)
+            End If
+        Next I
+        CheckDigitValue = (WeightedTotal Mod 103)
+        If CheckDigitValue &lt; 95 And CheckDigitValue &gt; 0 Then C128CheckDigit = ChrW(CheckDigitValue + 32 + FID)
+        If CheckDigitValue &gt; 94 Then C128CheckDigit = ChrW(CheckDigitValue + 100 + FID)
+        If CheckDigitValue = 0 Then C128CheckDigit = ChrW(194 + FID)
+        PrintableString = PrintableString &amp; C128CheckDigit &amp; ChrW(206 + FID)
+        Code128a = PrintableString
+    End Function
+
+
+    Public Function Code128b(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+
+        PrintableString = ""
+        WeightedTotal = 104
+        'The next 9 lines were added to support ReturnTypes 6-9
+        'in addition, CSID must be added to all ChrW statements
+        'Return types: 6=HR mode; 7=HR tall FID; 8=comp mode no HR; 9=comp mode no hr short
+        CID = 0 'Character ID
+        FID = 0 'Function ID used for start, stop and check characters
+        If ReturnType = 6 Or ReturnType = 7 Then CID = 11000
+        If ReturnType = 8 Then CID = 11300
+        If ReturnType = 9 Then CID = 11500
+        If ReturnType = 6 Or ReturnType = 9 Then FID = 11500
+        If ReturnType = 7 Or ReturnType = 8 Then FID = 11300
+        PrintableString = ChrW(204 + FID)
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &lt; 135 Then CurrentValue = CurrentCharNum - 32
+            If CurrentCharNum &gt; 134 Then CurrentValue = CurrentCharNum - 100
+            CurrentValue = CurrentValue * I
+            WeightedTotal = WeightedTotal + CurrentValue
+            If CurrentCharNum = 32 Then CurrentCharNum = 194
+            PrintableString = PrintableString &amp; ChrW(CurrentCharNum + CID)
+        Next I
+        CheckDigitValue = (WeightedTotal Mod 103)
+        If CheckDigitValue &lt; 95 And CheckDigitValue &gt; 0 Then C128CheckDigit = ChrW(CheckDigitValue + 32 + FID)
+        If CheckDigitValue &gt; 94 Then C128CheckDigit = ChrW(CheckDigitValue + 100 + FID)
+        If CheckDigitValue = 0 Then C128CheckDigit = ChrW(194 + FID)
+        PrintableString = PrintableString &amp; C128CheckDigit &amp; ChrW(206 + FID)
+        Code128b = PrintableString
+    End Function
+
+
+    Public Function Code128c(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+        NCID = 0
+        FID = 0
+        If ReturnType = 6 Or ReturnType = 7 Then NCID = 12000
+        If ReturnType = 8 Then NCID = 11300
+        If ReturnType = 9 Then NCID = 11500
+        If ReturnType = 6 Or ReturnType = 9 Then FID = 11500
+        If ReturnType = 7 Or ReturnType = 8 Then FID = 11300
+        If ReturnType &lt;&gt; 0 And ReturnType &lt;&gt; 1 And ReturnType &lt;&gt; 2 Then ReturnType = 0
+        PrintableString = ""
+        OnlyCorrectData = ""
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        If (Len(DataToEncode) Mod 2) = 1 Then DataToEncode = "0" &amp; DataToEncode
+        PrintableString = ChrW(205 + FID)
+        WeightedTotal = 105
+        WeightValue = 1
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength Step 2
+            CurrentValue = Val(Mid(DataToEncode, I, 2))
+            If CurrentValue &lt; 95 And CurrentValue &gt; 0 Then PrintableString = PrintableString &amp; ChrW(CurrentValue + 32 + NCID)
+            If CurrentValue &gt; 94 Then PrintableString = PrintableString &amp; ChrW(CurrentValue + 100 + NCID)
+            If CurrentValue = 0 Then PrintableString = PrintableString &amp; ChrW(194 + NCID)
+            CurrentValue = CurrentValue * WeightValue
+            WeightedTotal = WeightedTotal + CurrentValue
+            WeightValue = WeightValue + 1
+        Next I
+        CheckDigitValue = (WeightedTotal Mod 103)
+        If CheckDigitValue &lt; 95 And CheckDigitValue &gt; 0 Then C128CheckDigit = ChrW(CheckDigitValue + 32 + FID)
+        If CheckDigitValue &gt; 94 Then C128CheckDigit = ChrW(CheckDigitValue + 100 + FID)
+        If CheckDigitValue = 0 Then C128CheckDigit = ChrW(194 + FID)
+        If ReturnType = 0 Or ReturnType &gt; 2 Then Code128c = PrintableString &amp; C128CheckDigit &amp; ChrW(206 + FID)
+        If ReturnType = 1 Then Code128c = DataToEncode &amp; CheckDigitValue
+        If ReturnType = 2 Then Code128c = Str(CheckDigitValue)
+    End Function
+
+
+    Public Function I2of5(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        DataToEncode = RTrim(LTrim(DataToEncode))
+        OnlyCorrectData = ""
+        ' Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        'Check for an even number of digits, add 0 if not even
+        If (Len(DataToEncode) Mod 2) = 1 Then DataToEncode = "0" &amp; DataToEncode
+        'Assign start and stop codes
+        StartCode = ChrW(203)
+        StopCode = ChrW(204)
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength Step 2
+            'Get the value of each number pair
+            CurrentCharNum = Val((Mid(DataToEncode, I, 2)))
+            'Get the ASCII value of CurrentChar
+            If CurrentCharNum &lt; 94 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 33)
+            If CurrentCharNum &gt; 93 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 103)
+        Next I
+        'Get Printable String
+        PrintableString = StartCode + DataToPrint + StopCode
+        'Return PrintableString
+        I2of5 = PrintableString
+    End Function
+
+
+    Public Function Code39Mod43(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+        'Additional logic needed in case ReturnType is not correct
+        If ReturnType &lt;&gt; 0 And ReturnType &lt;&gt; 1 And ReturnType &lt;&gt; 2 Then ReturnType = 0
+        DataToEncode = UCase(DataToEncode)
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Only pass correct data
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get each character one at a time
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            'Get the value of CurrentChar according to MOD43
+            '0-9
+            If CurrentCharNum &lt; 58 And CurrentCharNum &gt; 47 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            'A-Z
+            If CurrentCharNum &lt; 91 And CurrentCharNum &gt; 64 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            'Space
+            If CurrentCharNum = 32 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '-
+            If CurrentCharNum = 45 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '.
+            If CurrentCharNum = 46 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '$
+            If CurrentCharNum = 36 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '/
+            If CurrentCharNum = 47 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '+
+            If CurrentCharNum = 43 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            '%
+            If CurrentCharNum = 37 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        WeightedTotal = 0
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get each character one at a time
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            'Get the value of CurrentChar according to MOD43
+            '0-9
+            If CurrentCharNum &lt; 58 And CurrentCharNum &gt; 47 Then CurrentValue = CurrentCharNum - 48
+            'A-Z
+            If CurrentCharNum &lt; 91 And CurrentCharNum &gt; 64 Then CurrentValue = CurrentCharNum - 55
+            'Space
+            If CurrentCharNum = 32 Then CurrentValue = 38
+            '-
+            If CurrentCharNum = 45 Then CurrentValue = 36
+            '.
+            If CurrentCharNum = 46 Then CurrentValue = 37
+            '$
+            If CurrentCharNum = 36 Then CurrentValue = 39
+            '/
+            If CurrentCharNum = 47 Then CurrentValue = 40
+            '+
+            If CurrentCharNum = 43 Then CurrentValue = 41
+            '%
+            If CurrentCharNum = 37 Then CurrentValue = 42
+            'To print the barcode symbol representing a space it is necessary
+            'to type or print "=" (the equal character) instead of a space character.
+            If CurrentCharNum = 32 Then CurrentCharNum = 61
+            'Gather data to print
+            DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+            'Add the values together
+            WeightedTotal = WeightedTotal + CurrentValue
+        Next I
+        'Divide the WeightedTotal by 43 and get the remainder, this is the CheckDigit
+        CheckDigitValue = (WeightedTotal Mod 43)
+        'Assign values to characters
+        '0-9
+        If CheckDigitValue &lt; 10 Then CheckDigit = CheckDigitValue + 48
+        'A-Z
+        If CheckDigitValue &lt; 36 And CheckDigitValue &gt; 9 Then CheckDigit = CheckDigitValue + 55
+        'Space
+        If CheckDigitValue = 38 Then CheckDigit = 61
+        '-
+        If CheckDigitValue = 36 Then CheckDigit = 45
+        '.
+        If CheckDigitValue = 37 Then CheckDigit = 46
+        '$
+        If CheckDigitValue = 39 Then CheckDigit = 36
+        '/
+        If CheckDigitValue = 40 Then CheckDigit = 47
+        '+
+        If CheckDigitValue = 41 Then CheckDigit = 43
+        '%
+        If CheckDigitValue = 42 Then CheckDigit = 37
+        'ReturnType 0 returns data formatted to the barcode font
+        If ReturnType = 0 Then Code39Mod43 = "!" &amp; DataToPrint &amp; ChrW(CheckDigit) &amp; "!" &amp; " "
+        'ReturnType 1 returns data formatted for human readable text
+        If ReturnType = 1 Then Code39Mod43 = DataToPrint &amp; ChrW(CheckDigit)
+        'ReturnType 2 returns the  check digit for the data supplied
+        If ReturnType = 2 Then Code39Mod43 = ChrW(CheckDigit)
+        DataToEncode = ""
+    End Function
+
+
+    Public Function Code39(ByVal DataToEncode As String) As String
+        DataToEncode = RTrim(LTrim(DataToEncode))
+        DataToPrint = ""
+        'Check for spaces in code
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get each character one at a time
+            CurrentChar = (Mid(DataToEncode, I, 1))
+            'To print the barcode symbol representing a space it is necessary
+            'to type or print "=" (the equal character) instead of a space character.
+            If CurrentChar = " " Then CurrentChar = "="
+            DataToPrint = DataToPrint &amp; CurrentChar
+        Next I
+        'Get Printable String
+        Code39 = "!" &amp; DataToPrint &amp; "!"
+        DataToEncode = ""
+    End Function
+
+
+    Public Function I2of5Mod10(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+        'Additional logic needed in case ReturnType is not entered
+        If ReturnType &lt;&gt; 0 And ReturnType &lt;&gt; 1 And ReturnType &lt;&gt; 2 Then ReturnType = 0
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        'Calculate Check Digit
+        Factor = 3
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'Multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            WeightedTotal = WeightedTotal + CurrentCharNum * Factor
+            'Change factor for next calculation
+            Factor = 4 - Factor
+        Next I
+        'Find the CheckDigit by finding the smallest number that = a multiple of 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        'Add check digit
+        DataToEncode = DataToEncode &amp; CheckDigit
+        'Check for an even number of digits, add 0 if not even
+        If (Len(DataToEncode) Mod 2) = 1 Then DataToEncode = "0" &amp; DataToEncode
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength Step 2
+            'Get the value of each number pair
+            CurrentCharNum = (Mid(DataToEncode, I, 2))
+            'Get the ASCII value of CurrentChar
+            If CurrentCharNum &lt; 94 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 33)
+            If CurrentCharNum &gt; 93 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 103)
+        Next I
+        'ReturnType 0 returns data formatted to the barcode font
+        If ReturnType = 0 Then I2of5Mod10 = ChrW(203) &amp; DataToPrint &amp; ChrW(204)
+        'ReturnType 1 returns data formatted for human readable text
+        If ReturnType = 1 Then I2of5Mod10 = DataToEncode
+        'ReturnType 2 returns the check digit for the data supplied
+        If ReturnType = 2 Then I2of5Mod10 = Str(CheckDigit)
+    End Function
+
+
+    Public Function MSI(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+        'Additional logic needed in case ReturnType is not entered correctly
+        If ReturnType &lt;&gt; 0 And ReturnType &lt;&gt; 1 And ReturnType &lt;&gt; 2 Then ReturnType = 0
+        'The MSI encoding function will only accept digits. Any non-numeric characters
+        'will be discarded
+        Dim DataToPrint As String       'output for function
+        Dim OnlyCorrectData As String   'Only numeric characters pulled from DataToEncode
+        Dim StringLength As Long        'Length of string
+        Dim Idx As Integer              'for loop counter
+        Dim OddNumbers As String        'String of odd position numbers used to create check digit
+        Dim EvenNumberSum As Long       'all of the even position numbers added up
+        Dim OddNumberProduct As Long    'Product of OddNumbers variable
+        Dim sOddNumberProduct As String 'String version of OddNumberProduct variable
+        Dim OddNumberSum As Long        'Sum of individual digits in sOddNumberProduct
+        Dim OddDigit As Boolean         'Used to determine even/odd position digits.
+        Dim CheckDigit As String        'This is the CheckDigit
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        '&lt;&lt;&lt;&lt; Calculate Check Digit &gt;&gt;&gt;&gt;
+        'To create the check digit follow these steps:
+        '1)Starting from the units position, create a new number with all of the odd
+        '  position digits in their original sequence.
+        '2)Multiply this new number by 2.
+        '3)Add all of the digits of the product from step two.
+        '4)Add all of the digits not used in step one to the result in step three.
+        '5)Determine the smallest number which when added to the result in step four
+        '  will result in a multiple of 10. This is the check character.
+        'Step 1 -- Create a new number of the odd position digits starting from the right and going left, but store the
+        'digits from left to right.
+        'Create the odd position number &amp; prepare for Step 4 by getting the sum of all even position characters
+        StringLength = Len(DataToEncode)
+        OddNumbers = ""
+        OddDigit = True
+        EvenNumberSum = 0
+        For Idx = StringLength To 1 Step -1
+            If OddDigit = True Then
+                OddNumbers = Mid(DataToEncode, Idx, 1) &amp; OddNumbers
+                OddDigit = False
+            Else
+                EvenNumberSum = EvenNumberSum + Val(Mid(DataToEncode, Idx, 1))
+                OddDigit = True
+            End If
+        Next Idx
+        'Step 2 -- Multiply this new number by 2.
+        OddNumberProduct = Val(OddNumbers) * 2
+        'Step 3 -- Add all of the digits of the product from step two.
+        sOddNumberProduct = Format(OddNumberProduct)
+        StringLength = Len(sOddNumberProduct)
+        OddNumberSum = 0
+        For Idx = 1 To StringLength
+            OddNumberSum = OddNumberSum + Val(Mid(sOddNumberProduct, Idx, 1))
+        Next Idx
+        'Step 4 -- Add all of the digits not used in step one to the result in step three.
+        'We will store the result in OddNumberSum just so we don't have to create another variable
+        OddNumberSum = OddNumberSum + EvenNumberSum
+        'Step 5 -- Determine the smallest number which when added to the result in step four
+        'will result in a multiple of 10. This is the check character.
+        OddNumberSum = OddNumberSum Mod 10
+        If OddNumberSum &lt;&gt; 0 Then
+            CheckDigit = Format(10 - OddNumberSum)
+        Else
+            CheckDigit = "0"
+        End If
+        Select Case ReturnType
+            Case 0  'Returns formatted data for barcode
+                DataToPrint = "(" &amp; DataToEncode &amp; CheckDigit &amp; ")"
+            Case 1  'Returns data formatted for human readable text.
+                'Which means all of the invalid characters are
+                'stripped out.
+                DataToPrint = DataToEncode
+            Case 2  'Returns just the check digit
+                DataToPrint = CheckDigit
+        End Select
+        MSI = DataToPrint
+    End Function
+
+
+    Public Function UPCa(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        '2006.2 BDA added the next line for general compatibility
+        StringLength = Len(OnlyCorrectData)
+        'Remove check digits if they added one
+        If StringLength &lt; 11 Then OnlyCorrectData = "00000000000"
+        If StringLength = 15 Then OnlyCorrectData = "00000000000"
+        If StringLength &gt; 18 Then OnlyCorrectData = "00000000000"
+        If StringLength = 12 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 11)
+        If StringLength = 14 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 11) &amp; Mid(OnlyCorrectData, 13, 2)
+        If StringLength = 17 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 11) &amp; Mid(OnlyCorrectData, 13, 5)
+        EAN2AddOn = ""
+        EAN5AddOn = ""
+        EANAddOnToPrint = ""
+        '2006.2 BDA added the next line for general compatibility
+        StringLength = Len(OnlyCorrectData)
+        If StringLength = 16 Then EAN5AddOn = Mid(OnlyCorrectData, 12, 5)
+        If StringLength = 13 Then EAN2AddOn = Mid(OnlyCorrectData, 12, 2)
+        'split 12 digit number from add-on
+
+        DataToEncode = Mid(OnlyCorrectData, 1, 11)
+        '&lt;&lt;&lt;&lt; Calculate Check Digit &gt;&gt;&gt;&gt;
+        Factor = 3
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            WeightedTotal = WeightedTotal + CurrentCharNum * Factor
+            'change factor for next calculation
+            Factor = 4 - Factor
+        Next I
+        'Find the CheckDigit by finding the number + WeightedTotal that = a multiple of 10
+        'Divide by 10, get the remainder and subtract from 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        DataToEncode = DataToEncode &amp; CheckDigit
+        'Now that have the total number including the check digit, determine character to print
+        'for proper barcoding
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get the ASCII value of each number
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            'Print different barcodes according to the location of the CurrentChar
+            Select Case I
+                Case 1
+                    'For the first character, print the human readable character, the normal
+                    'guard pattern, and then the barcode without the human readable character
+                    '2006.2 BDA modified the next 2 lines for general compatibility
+                    If (CurrentCharNum - 48) &gt; 4 Then DataToPrint = ChrW(CurrentCharNum + 64) &amp; "(" &amp; ChrW(CurrentCharNum + 49)
+                    If (CurrentCharNum - 48) &lt; 5 Then DataToPrint = ChrW(CurrentCharNum + 37) &amp; "(" &amp; ChrW(CurrentCharNum + 49)
+                Case 2
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 3
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 4
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 5
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 6
+                    'Print the center guard pattern after the 6th character
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum) &amp; "*"
+                Case 7
+                    'Add 27 to the ASII value of characters 6-12 to print from character set C
+                    'This is required when printing to the right of the center guard pattern
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 8
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 9
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 10
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 11
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 12
+                    'For the last character, print the barcode without the human readable character,
+                    'the normal guard pattern, and then the human readable character.
+                    '2006.2 BDA modified the next 2 lines for general compatibility
+                    If (CurrentCharNum - 48) &gt; 4 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 59) &amp; "(" &amp; ChrW(CurrentCharNum + 64)
+                    If (CurrentCharNum - 48) &lt; 5 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 59) &amp; "(" &amp; ChrW(CurrentCharNum + 37)
+            End Select
+        Next I
+        'Process add-ons if they exist
+        If Len(EAN2AddOn) = 2 Then DataToPrint = DataToPrint &amp; ProcessEAN2AddOn(EAN2AddOn)
+        If Len(EAN5AddOn) = 5 Then DataToPrint = DataToPrint &amp; ProcessEAN5AddOn(EAN5AddOn)
+        'Return PrintableString
+        UPCa = DataToPrint
+    End Function
+
+    Private Function UPCe7To11(ByVal DataToExpand As String) As String
+        StringLength = Len(DataToExpand)
+        If StringLength = 6 Then DataToExpand = "0" &amp; DataToExpand
+        'Expect 7 digits; the first digit is the number system
+        If StringLength &lt;&gt; 7 Then DataToExpand = "0000000"
+        Dim D1 As String
+        Dim D2 As String
+        Dim D3 As String
+        Dim D4 As String
+        Dim D5 As String
+        Dim D6 As String
+        Dim D7 As String
+        D1 = Mid(DataToExpand, 1, 1)
+        D2 = Mid(DataToExpand, 2, 1)
+        D3 = Mid(DataToExpand, 3, 1)
+        D4 = Mid(DataToExpand, 4, 1)
+        D5 = Mid(DataToExpand, 5, 1)
+        D6 = Mid(DataToExpand, 6, 1)
+        D7 = Mid(DataToExpand, 7, 1)
+        Select Case D7
+            Case "0"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; "00000" &amp; D4 &amp; D5 &amp; D6
+            Case "1"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D7 &amp; "0000" &amp; D4 &amp; D5 &amp; D6
+            Case "2"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D7 &amp; "0000" &amp; D4 &amp; D5 &amp; D6
+            Case "3"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; "00000" &amp; D5 &amp; D6
+            Case "4"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; "00000" &amp; D6
+            Case "5"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; "0000" &amp; D7
+            Case "6"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; "0000" &amp; D7
+            Case "7"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; "0000" &amp; D7
+            Case "8"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; "0000" &amp; D7
+            Case "9"
+                UPCe7To11 = D1 &amp; D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; "0000" &amp; D7
+        End Select
+        '2006.2 BDA modified the next line for compatibility with different office versions
+        StringLength = Len(UPCe7To11)
+    End Function
+
+    Public Function UPCe(ByVal DataToEncode As String) As String
+        OnlyCorrectData = ""
+        DataToPrint = ""
+        ' Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        'If UPCe is not expanded, then expand
+        '2006.2 BDA added the next 4 lines for compatibility with different office versions
+        StringLength = Len(OnlyCorrectData)
+        If StringLength = 6 Then OnlyCorrectData = UPCe7To11("0" &amp; OnlyCorrectData)
+        If StringLength = 7 Then OnlyCorrectData = UPCe7To11(OnlyCorrectData)
+        If StringLength = 8 Then OnlyCorrectData = UPCe7To11(Mid(OnlyCorrectData, 1, 7))
+
+        '2006.2 BDA added the next line for compatibility with different office versions
+        StringLength = Len(OnlyCorrectData)
+        If StringLength &lt; 11 Then OnlyCorrectData = "00005000000"
+        If StringLength = 15 Then OnlyCorrectData = "00005000000"
+        If StringLength &gt; 18 Then OnlyCorrectData = "00005000000"
+        If StringLength = 12 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 11)
+        If StringLength = 14 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 11) &amp; Mid(OnlyCorrectData, 13, 2))
+        If StringLength = 17 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 11) &amp; Mid(OnlyCorrectData, 13, 5))
+        EAN2AddOn = ""
+        EAN5AddOn = ""
+        EANAddOnToPrint = ""
+        '2006.2 BDA added the next line for compatibility with different office versions
+        StringLength = Len(OnlyCorrectData)
+        If StringLength = 16 Then EAN5AddOn = Mid(OnlyCorrectData, 12, 5)
+        If StringLength = 13 Then EAN2AddOn = Mid(OnlyCorrectData, 12, 2)
+        'split 12 digit number from add-on
+        DataToEncode = Mid(OnlyCorrectData, 1, 11)
+        'Calculate Check Digit
+        Factor = 3
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'Multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            WeightedTotal = WeightedTotal + CurrentCharNum * Factor
+            'Change the factor for next calculation
+            Factor = 4 - Factor
+        Next I
+        'Find the CheckDigit by finding the number + WeightedTotal that = a multiple of 10
+        'Divide by 10, get the remainder and subtract from 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        DataToEncode = DataToEncode &amp; CheckDigit
+        'Compress UPC-A to UPC-E if possible
+        Dim D1 As String
+        Dim D2 As String
+        Dim D3 As String
+        Dim D4 As String
+        Dim D5 As String
+        Dim D6 As String
+        Dim D7 As String
+        Dim D8 As String
+        Dim D9 As String
+        Dim D10 As String
+        Dim D11 As String
+        Dim D12 As String
+        D1 = Mid(DataToEncode, 1, 1)
+        D2 = Mid(DataToEncode, 2, 1)
+        D3 = Mid(DataToEncode, 3, 1)
+        D4 = Mid(DataToEncode, 4, 1)
+        D5 = Mid(DataToEncode, 5, 1)
+        D6 = Mid(DataToEncode, 6, 1)
+        D7 = Mid(DataToEncode, 7, 1)
+        D8 = Mid(DataToEncode, 8, 1)
+        D9 = Mid(DataToEncode, 9, 1)
+        D10 = Mid(DataToEncode, 10, 1)
+        D11 = Mid(DataToEncode, 11, 1)
+        D12 = Mid(DataToEncode, 12, 1)
+        '2005.12 BDA updated the next line
+        If D1 = "0" Or D1 = "1" Then
+            'Condition A
+            'EX: 02345600007
+            If (D11 = "5" Or D11 = "6" Or D11 = "7" Or D11 = "8" Or D11 = "9") And D6 &lt;&gt; "0" And (D7 = "0" And D8 = "0" And D9 = "0" And D10 = "0") Then
+                DataToEncode = D2 &amp; D3 &amp; D4 &amp; D5 &amp; D6 &amp; D11
+            End If
+            'Condition B
+            'EX: 02345000001
+            If (D6 = "0" And D7 = "0" And D8 = "0" And D9 = "0" And D10 = "0") And D5 &lt;&gt; "0" Then
+                DataToEncode = D2 &amp; D3 &amp; D4 &amp; D5 &amp; D11 &amp; "4"
+            End If
+            'Condition C
+            'EX: 06320000971
+            If (D5 = "0" And D6 = "0" And D7 = "0" And D8 = "0") And (D4 = "1" Or D4 = "2" Or D4 = "0") Then
+                DataToEncode = D2 &amp; D3 &amp; D9 &amp; D10 &amp; D11 &amp; D4
+            End If
+            'Condition D
+            'EX: 08670000093
+            If (D5 = "0" And D6 = "0" And D7 = "0" And D8 = "0" And D9 = "0") And (D4 = "3" Or D4 = "4" Or D4 = "5" Or D4 = "6" Or D4 = "7" Or D4 = "8" Or D4 = "9") Then
+                DataToEncode = D2 &amp; D3 &amp; D4 &amp; D10 &amp; D11 &amp; "3"
+            End If
+        End If
+        'Run UPC-E compression only if DataToEncode = 6
+        If Len(DataToEncode) = 6 Then
+            '2005.12 BDA updated this section for number system 1 compatibility
+            'Encode the check character into the symbol
+            'by using variable parity between character sets A and B
+            'The UPC-E starts with a 0 or 1 which indicates the number system
+            'Number system is 1 only if first digit is 1
+            If D1 = "1" Then
+                Select Case D12
+                    Case "0"
+                        Encoding = "AAABBB"
+                    Case "1"
+                        Encoding = "AABABB"
+                    Case "2"
+                        Encoding = "AABBAB"
+                    Case "3"
+                        Encoding = "AABBBA"
+                    Case "4"
+                        Encoding = "ABAABB"
+                    Case "5"
+                        Encoding = "ABBAAB"
+                    Case "6"
+                        Encoding = "ABBBAA"
+                    Case "7"
+                        Encoding = "ABABAB"
+                    Case "8"
+                        Encoding = "ABABBA"
+                    Case "9"
+                        Encoding = "ABBABA"
+                End Select
+            Else
+                'Number system 0
+                D1 = "0"
+                Select Case D12
+                    Case "0"
+                        Encoding = "BBBAAA"
+                    Case "1"
+                        Encoding = "BBABAA"
+                    Case "2"
+                        Encoding = "BBAABA"
+                    Case "3"
+                        Encoding = "BBAAAB"
+                    Case "4"
+                        Encoding = "BABBAA"
+                    Case "5"
+                        Encoding = "BAABBA"
+                    Case "6"
+                        Encoding = "BAAABB"
+                    Case "7"
+                        Encoding = "BABABA"
+                    Case "8"
+                        Encoding = "BABAAB"
+                    Case "9"
+                        Encoding = "BAABAB"
+                End Select
+            End If
+            StringLength = Len(DataToEncode)
+            For I = 1 To StringLength
+                'Get the ASCII value of each number
+                CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+                CurrentEncoding = Mid(Encoding, I, 1)
+                Select Case CurrentEncoding
+                    Case "A"
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                    Case "B"
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 17)
+                End Select
+                'Add in the 1st character along with guard patterns at the correct locations
+                Select Case I
+                    Case 1
+                        'For the LeadingDigit print the human readable character of the number system,
+                        'the normal guard pattern and then the rest of the barcode
+                        If D1 = "0" Then DataToPrint = ChrW(85) &amp; "(" &amp; DataToPrint
+                        If D1 = "1" Then DataToPrint = ChrW(86) &amp; "(" &amp; DataToPrint
+                    Case 6
+                        'Print the SPECIAL guard pattern and check character
+                        If Val(D12) &gt; 4 Then DataToPrint = DataToPrint &amp; ")" &amp; ChrW(AscW(D12) + 64)
+                        If Val(D12) &lt; 5 Then DataToPrint = DataToPrint &amp; ")" &amp; ChrW(AscW(D12) + 37)
+                End Select
+            Next I
+        End If
+
+        If Len(DataToEncode) &lt;&gt; 6 Then
+            StringLength = Len(DataToEncode)
+            For I = 1 To StringLength
+                'Get the ASCII value of each number
+                CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+                Select Case I
+                    Case 1
+                        'For the first character, print the human readable character, the normal
+                        'guard pattern, and then the barcode without the human readable character
+                        If (CurrentCharNum - 48) &gt; 4 Then DataToPrint = ChrW(CurrentCharNum + 64) &amp; "(" &amp; ChrW(CurrentCharNum + 49)
+                        If (CurrentCharNum - 48) &lt; 5 Then DataToPrint = ChrW(CurrentCharNum + 37) &amp; "(" &amp; ChrW(CurrentCharNum + 49)
+                    Case 2
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                    Case 3
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                    Case 4
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                    Case 5
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                    Case 6
+                        'Print the center guard pattern after the 6th character
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum) &amp; "*"
+                    Case 7
+                        'Add 27 to the ASII value of characters 6-12 to print from character set C
+                        'This is required when printing to the right of the center guard pattern
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                    Case 8
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                    Case 9
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                    Case 10
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                    Case 11
+                        DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                    Case 12
+                        'For the last character, print the barcode without the human readable character,
+                        'the normal guard pattern, and then the human readable character.
+                        If (CurrentCharNum - 48) &gt; 4 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 59) &amp; "(" &amp; ChrW(CurrentCharNum + 64)
+                        If (CurrentCharNum - 48) &lt; 5 Then DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 59) &amp; "(" &amp; ChrW(CurrentCharNum + 37)
+                End Select
+            Next I
+        End If
+
+        'Process add-ons if they exist
+        If Len(EAN2AddOn) = 2 Then DataToPrint = DataToPrint &amp; ProcessEAN2AddOn(EAN2AddOn)
+        If Len(EAN5AddOn) = 5 Then DataToPrint = DataToPrint &amp; ProcessEAN5AddOn(EAN5AddOn)
+        'Return PrintableString
+        UPCe = DataToPrint
+    End Function
+
+
+    Public Function IDAEAN13(ByVal DataToEncode As String) As String
+        'This function was added for compatibility with Excel 2007 which refers to EAN13 as a cell location
+        IDAEAN13 = EAN13(DataToEncode)
+    End Function
+
+
+    Public Function IDAEAN8(ByVal DataToEncode As String) As String
+        'This function was added for compatibility with Excel 2007 which refers to EAN8 as a cell location
+        IDAEAN8 = EAN8(DataToEncode)
+    End Function
+
+
+    Public Function EAN13(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        '2006.2 BDA added the next line for general compatibility
+        StringLength = Len(OnlyCorrectData)
+        If StringLength &lt; 12 Then OnlyCorrectData = "0000000000000"
+        If StringLength = 16 Then OnlyCorrectData = "0000000000000"
+        If StringLength = 13 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 12)
+        If StringLength = 15 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 12) &amp; Mid(OnlyCorrectData, 14, 2))
+        If StringLength &gt; 17 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 12) &amp; Mid(OnlyCorrectData, 14, 5))
+        Dim EAN2AddOn As String
+        Dim EAN5AddOn As String
+        EAN2AddOn = ""
+        EAN5AddOn = ""
+        '2006.2 BDA added the next line for general compatibility
+        StringLength = Len(OnlyCorrectData)
+        If StringLength = 17 Then EAN5AddOn = Mid(OnlyCorrectData, 13, 5)
+        If StringLength = 14 Then EAN2AddOn = Mid(OnlyCorrectData, 13, 2)
+        'Remove digit number from add-ons and check digit
+        DataToEncode = Mid(OnlyCorrectData, 1, 12)
+        'Calculate Check Digit
+        Factor = 3
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'Multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            WeightedTotal = WeightedTotal + CurrentCharNum * Factor
+            'Change factor for next calculation
+            Factor = 4 - Factor
+        Next I
+        'Find the CheckDigit by finding the number + WeightedTotal that = a multiple of 10
+        'Divide by 10, get the remainder and subtract from 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        'Encode the leading digit into the left half of the EAN-13 symbol
+        'by using variable parity between character sets A and B
+        LeadingDigit = Mid(DataToEncode, 1, 1)
+        Select Case LeadingDigit
+            Case 0
+                Encoding = "AAAAAACCCCCC"
+            Case 1
+                Encoding = "AABABBCCCCCC"
+            Case 2
+                Encoding = "AABBABCCCCCC"
+            Case 3
+                Encoding = "AABBBACCCCCC"
+            Case 4
+                Encoding = "ABAABBCCCCCC"
+            Case 5
+                Encoding = "ABBAABCCCCCC"
+            Case 6
+                Encoding = "ABBBAACCCCCC"
+            Case 7
+                Encoding = "ABABABCCCCCC"
+            Case 8
+                Encoding = "ABABBACCCCCC"
+            Case 9
+                Encoding = "ABBABACCCCCC"
+        End Select
+        'Add the check digit to the end of the barcode &amp; remove the leading digit
+        DataToEncode = Mid(DataToEncode, 2, 11) &amp; CheckDigit
+        'Determine character to print for proper barcoding
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get the ASCII value of each number excluding the first number because
+            'it is encoded with variable parity
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            CurrentEncoding = Mid(Encoding, I, 1)
+            'Print different barcodes according to the location of the CurrentChar and CurrentEncoding
+            Select Case CurrentEncoding
+                Case "A"
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case "B"
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 17)
+                Case "C"
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+            End Select
+            'Add in the 1st character along with guard patterns
+            Select Case I
+                Case 1
+                    'For the LeadingDigit, print the human readable character,
+                    'the normal guard pattern, and then the rest of the barcode
+                    If LeadingDigit &gt; 4 Then DataToPrint = ChrW((LeadingDigit + 48) + 64) &amp; "(" &amp; DataToPrint
+                    If LeadingDigit &lt; 5 Then DataToPrint = ChrW((LeadingDigit + 48) + 37) &amp; "(" &amp; DataToPrint
+                Case 6
+                    'Print the center guard pattern after the 6th character
+                    DataToPrint = DataToPrint &amp; "*"
+                Case 12
+                    'For the last character (12), print the the normal guard pattern after the barcode
+                    DataToPrint = DataToPrint &amp; "("
+            End Select
+        Next I
+        'Process add-ons if they exist
+        If Len(EAN2AddOn) = 2 Then DataToPrint = DataToPrint &amp; " " &amp; ProcessEAN2AddOn(EAN2AddOn)
+        If Len(EAN5AddOn) = 5 Then DataToPrint = DataToPrint &amp; " " &amp; ProcessEAN5AddOn(EAN5AddOn)
+        'Return PrintableString
+        EAN13 = DataToPrint
+    End Function
+
+
+    Public Function EAN8(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        '2006.2 BDA modified the next 14 lines for add-on compatibility
+        StringLength = Len(OnlyCorrectData)
+        If StringLength &lt; 7 Then OnlyCorrectData = "0000000"
+        If StringLength = 11 Then OnlyCorrectData = "0000000"
+        If StringLength = 8 Then OnlyCorrectData = Mid(OnlyCorrectData, 1, 7)
+        If StringLength = 10 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 7) &amp; Mid(OnlyCorrectData, 9, 2))
+        If StringLength &gt; 12 Then OnlyCorrectData = (Mid(OnlyCorrectData, 1, 7) &amp; Mid(OnlyCorrectData, 9, 5))
+        Dim EAN2AddOn As String
+        Dim EAN5AddOn As String
+        EAN2AddOn = ""
+        EAN5AddOn = ""
+        '2006.2 BDA added the next line for general compatibility
+        StringLength = Len(OnlyCorrectData)
+        If StringLength = 12 Then EAN5AddOn = Mid(OnlyCorrectData, 8, 5)
+        If StringLength = 9 Then EAN2AddOn = Mid(OnlyCorrectData, 8, 2)
+        'Remove digit number from add-ons and check digit
+        DataToEncode = Mid(OnlyCorrectData, 1, 7)
+        'Calculate Check Digit
+        Factor = 3
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'Multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            WeightedTotal = WeightedTotal + CurrentCharNum * Factor
+            'Change factor for next calculation
+            Factor = 4 - Factor
+        Next I
+        'Find the CheckDigit by finding the number + WeightedTotal that = a multiple of 10
+        'Divide by 10, get the remainder and subtract from 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        DataToEncode = DataToEncode &amp; CheckDigit
+        'Determine character to print for proper barcoding
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get the ASCII value of each number
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            CurrentEncoding = Mid(Encoding, I, 1)
+            'Print different barcodes according to the location of the CurrentChar and CurrentEncoding
+            Select Case I
+                Case 1
+                    'For the first character, print the normal guard pattern
+                    'and then the barcode, without the human readable character
+                    DataToPrint = "(" &amp; ChrW(CurrentCharNum)
+                Case 2
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 3
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum)
+                Case 4
+                    'Print the center guard pattern after the 6th character
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum) &amp; "*"
+                Case 5
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 6
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 7
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27)
+                Case 8
+                    'Print the check digit as 8th character + normal guard pattern
+                    DataToPrint = DataToPrint &amp; ChrW(CurrentCharNum + 27) &amp; "("
+            End Select
+        Next I
+        '2006.2 BDA modified the next 3 lines for add-on compatibility
+        'Process add-ons if they exist
+        If Len(EAN2AddOn) = 2 Then DataToPrint = DataToPrint &amp; " " &amp; ProcessEAN2AddOn(EAN2AddOn)
+        If Len(EAN5AddOn) = 5 Then DataToPrint = DataToPrint &amp; " " &amp; ProcessEAN5AddOn(EAN5AddOn)
+        'Return PrintableString
+        EAN8 = DataToPrint
+    End Function
+
+
+    Public Function UCC128(ByVal UCCToEncode As String) As String
+        'Check for FNC1 which can be ASCII 202 and ASCII 212-217
+        CurrentCharNum = AscW(Mid(UCCToEncode, 1, 1))
+        If ((CurrentCharNum = 202) Or ((CurrentCharNum &gt; 211) And (CurrentCharNum &lt; 219))) Then
+            'do nothing, AI is already in the data
+        Else
+            UCCToEncode = ChrW(202) &amp; UCCToEncode
+        End If
+        UCC128 = Code128(UCCToEncode, 0, True)
+    End Function
+
+
+    Public Function Code11(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        ' Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 2 lines for compatibility with different office versions
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If (CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58) Or CurrentCharNum = 45 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        'Calculate Check Digit
+        Factor = 1
+        WeightedTotal = 0
+        For I = Len(DataToEncode) To 1 Step -1
+            'Get the value of each number starting at the end
+            CurrentChar = Mid(DataToEncode, I, 1)
+            'Set the "-" character to the value of 10
+            If CurrentChar = "-" Then CurrentChar = "10"
+            'Multiply by the weighting character and add together
+            WeightedTotal = WeightedTotal + Val(CurrentChar) * Factor
+            'Change factor for next calculation
+            Factor = Factor + 1
+        Next I
+        'Find the Modulo 11 check digit
+        CheckDigit = WeightedTotal Mod 11
+        Code11 = "(" &amp; DataToEncode &amp; CheckDigit &amp; ")"
+    End Function
+
+
+    Public Function RM4SCC(ByVal DataToEncode As String) As String
+        DataToEncode = UCase(DataToEncode)
+        OnlyCorrectData = ""
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get each character one at a time
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            'Get the value of CurrentChar according to MOD43
+            '0-9
+            If CurrentCharNum &lt; 58 And CurrentCharNum &gt; 47 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            'A-Z
+            If CurrentCharNum &lt; 91 And CurrentCharNum &gt; 64 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        Dim r As Integer
+        Dim C As Integer
+        Dim Rtotal As Long
+        Dim Ctotal As Long
+        Rtotal = 0
+        Ctotal = 0
+        WeightedTotal = 0
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get each character one at a time
+            CurrentChar = Mid(DataToEncode, I, 1)
+            'Get the values of CurrentChar
+            Select Case CurrentChar
+                Case "0"
+                    r = 1
+                    C = 1
+                Case "1"
+                    r = 1
+                    C = 2
+                Case "2"
+                    r = 1
+                    C = 3
+                Case "3"
+                    r = 1
+                    C = 4
+                Case "4"
+                    r = 1
+                    C = 5
+                Case "5"
+                    r = 1
+                    C = 0
+                Case "6"
+                    r = 2
+                    C = 1
+                Case "7"
+                    r = 2
+                    C = 2
+                Case "8"
+                    r = 2
+                    C = 3
+                Case "9"
+                    r = 2
+                    C = 4
+                Case "A"
+                    r = 2
+                    C = 5
+                Case "B"
+                    r = 2
+                    C = 0
+                Case "C"
+                    r = 3
+                    C = 1
+                Case "D"
+                    r = 3
+                    C = 2
+                Case "E"
+                    r = 3
+                    C = 3
+                Case "F"
+                    r = 3
+                    C = 4
+                Case "G"
+                    r = 3
+                    C = 5
+                Case "H"
+                    r = 3
+                    C = 0
+                Case "I"
+                    r = 4
+                    C = 1
+                Case "J"
+                    r = 4
+                    C = 2
+                Case "K"
+                    r = 4
+                    C = 3
+                Case "L"
+                    r = 4
+                    C = 4
+                Case "M"
+                    r = 4
+                    C = 5
+                Case "N"
+                    r = 4
+                    C = 0
+                Case "O"
+                    r = 5
+                    C = 1
+                Case "P"
+                    r = 5
+                    C = 2
+                Case "Q"
+                    r = 5
+                    C = 3
+                Case "R"
+                    r = 5
+                    C = 4
+                Case "S"
+                    r = 5
+                    C = 5
+                Case "T"
+                    r = 5
+                    C = 0
+                Case "U"
+                    r = 0
+                    C = 1
+                Case "V"
+                    r = 0
+                    C = 2
+                Case "W"
+                    r = 0
+                    C = 3
+                Case "X"
+                    r = 0
+                    C = 4
+                Case "Y"
+                    r = 0
+                    C = 5
+                Case "Z"
+                    r = 0
+                    C = 0
+
+            End Select
+            'add the values together
+            Rtotal = Rtotal + r
+            Ctotal = Ctotal + C
+        Next I
+
+        'divide the Totals by 6 and get the remainder, this is a reference
+        'to the Check Digit.
+        'set check digit to CurrentChar (a string)
+        Rtotal = (Rtotal Mod 6)
+        Ctotal = (Ctotal Mod 6)
+        Select Case Rtotal
+            Case 1
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "0"
+                    Case 2
+                        CurrentChar = "1"
+                    Case 3
+                        CurrentChar = "2"
+                    Case 4
+                        CurrentChar = "3"
+                    Case 5
+                        CurrentChar = "4"
+                    Case 0
+                        CurrentChar = "5"
+                End Select
+            Case 2
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "6"
+                    Case 2
+                        CurrentChar = "7"
+                    Case 3
+                        CurrentChar = "8"
+                    Case 4
+                        CurrentChar = "9"
+                    Case 5
+                        CurrentChar = "A"
+                    Case 0
+                        CurrentChar = "B"
+                End Select
+            Case 3
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "C"
+                    Case 2
+                        CurrentChar = "D"
+                    Case 3
+                        CurrentChar = "E"
+                    Case 4
+                        CurrentChar = "F"
+                    Case 5
+                        CurrentChar = "G"
+                    Case 0
+                        CurrentChar = "H"
+                End Select
+            Case 4
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "I"
+                    Case 2
+                        CurrentChar = "J"
+                    Case 3
+                        CurrentChar = "K"
+                    Case 4
+                        CurrentChar = "L"
+                    Case 5
+                        CurrentChar = "M"
+                    Case 0
+                        CurrentChar = "N"
+                End Select
+            Case 5
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "O"
+                    Case 2
+                        CurrentChar = "P"
+                    Case 3
+                        CurrentChar = "Q"
+                    Case 4
+                        CurrentChar = "R"
+                    Case 5
+                        CurrentChar = "S"
+                    Case 0
+                        CurrentChar = "T"
+                End Select
+            Case 0
+                Select Case Ctotal
+                    Case 1
+                        CurrentChar = "U"
+                    Case 2
+                        CurrentChar = "V"
+                    Case 3
+                        CurrentChar = "W"
+                    Case 4
+                        CurrentChar = "X"
+                    Case 5
+                        CurrentChar = "Y"
+                    Case 0
+                        CurrentChar = "Z"
+                End Select
+        End Select
+        'Return Printable String
+        RM4SCC = "(" &amp; DataToEncode &amp; CurrentChar &amp; ")"
+    End Function
+
+
+    Public Function Codabar(ByVal DataToEncode As String) As String
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        StringLength = Len(DataToEncode)
+        'Check to make sure data is numeric, $, +, -, /, or :, and remove all others.
+        For I = 1 To StringLength
+            '2006.2 BDA modified the next 9 lines for compatibility with different office versions
+            CurrentChar = Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(CurrentChar)
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = "$" Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = "+" Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = "-" Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = "/" Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = "." Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            If CurrentChar = ":" Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToPrint = OnlyCorrectData
+        'Get Printable String
+        Codabar = "A" &amp; DataToPrint &amp; "B"
+    End Function
+
+
+    Public Function Postnet(ByVal DataToEncode As String, Optional ByVal ReturnType As Integer = 0) As String
+        'Additional logic in case ReturnType is not correct
+        If ReturnType &lt;&gt; 0 And ReturnType &lt;&gt; 1 And ReturnType &lt;&gt; 2 Then ReturnType = 0
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Check to make sure data is numeric and remove dashes, etc.
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 3 lines for compatibility with different office versions
+            'If IsNumeric(Mid(DataToEncode, I, 1)) Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then OnlyCorrectData = OnlyCorrectData &amp; Mid(DataToEncode, I, 1)
+        Next I
+        DataToEncode = OnlyCorrectData
+        'Calculate Check Digit
+        WeightedTotal = 0
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            'Get the value of each number
+            CurrentCharNum = Mid(DataToEncode, I, 1)
+            'Add the values together
+            WeightedTotal = WeightedTotal + CurrentCharNum
+        Next I
+        'Find the CheckDigit by finding the number + WeightedTotal that = a multiple of 10
+        'divide by 10, get the remainder and subtract from 10
+        I = (WeightedTotal Mod 10)
+        If I &lt;&gt; 0 Then
+            CheckDigit = (10 - I)
+        Else
+            CheckDigit = 0
+        End If
+        'ReturnType 0 returns data formatted to the barcode font
+        If ReturnType = 0 Then Postnet = "(" &amp; DataToEncode &amp; CheckDigit &amp; ")"
+        'ReturnType 1 returns data formatted for human readable text
+        If ReturnType = 1 Then Postnet = DataToEncode &amp; CheckDigit
+        'ReturnType 2 returns the  check digit for the data supplied
+        If ReturnType = 2 Then Postnet = Str(CheckDigit)
+    End Function
+
+
+    Public Function Code93(ByVal DataToEncode As String) As String
+        DataToEncode = UCase(DataToEncode)
+        DataToPrint = ""
+        OnlyCorrectData = ""
+        'Only pass correct data
+        StringLength = Len(DataToEncode)
+        For I = 1 To StringLength
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            If Code93Val(CurrentCharNum) &lt; 47 Then
+                If CurrentCharNum = 32 Then CurrentCharNum = 61
+                OnlyCorrectData = OnlyCorrectData &amp; ChrW(CurrentCharNum)
+            End If
+        Next I
+        DataToEncode = OnlyCorrectData
+        CurrentCharNum = 0
+        StringLength = Len(DataToEncode)
+        Dim C As Integer
+        Dim K As Integer
+        Dim CW As Integer
+        Dim KW As Integer
+        Dim CWSum As Integer
+        Dim KWSum As Integer
+        CW = 1
+        KW = 2
+        I = 1
+        '2006.2 BDA modified the next line for compatibility with different office versions
+        For I = StringLength To 1 Step -1
+            'Get each character one at a time from the back
+            CurrentCharNum = AscW(Mid(DataToEncode, I, 1))
+            'Get the value
+            CurrentValue = Code93Val(CurrentCharNum)
+            'Calculate check digit C
+            CWSum = CWSum + (CurrentValue * CW)
+            CW = CW + 1
+            If CW = 21 Then CW = 1
+            'Calculate check digit K
+            KWSum = KWSum + (CurrentValue * KW)
+            KW = KW + 1
+            If KW = 16 Then KW = 1
+            'Gather data to print
+            DataToPrint = ChrW(CurrentCharNum) &amp; DataToPrint
+        Next I
+        'Divide the C sum by 47 and get the remainder, this is the Check Digit
+        C = (CWSum Mod 47)
+        'Add the last digit to the K sum
+        KWSum = KWSum + C
+        'Divide the K sum by 47 and get the remainder, this is the Check Digit
+        K = (KWSum Mod 47)
+        Code93 = "(" &amp; DataToPrint &amp; Code93Char(C) &amp; Code93Char(K) &amp; ")"
+    End Function
+
+    Private Function Code93Char(ByVal CharValue As Integer) As String
+        'Returns a character from a character value
+        'An invalid character value returns nothing
+        Code93Char = ""
+        If CharValue &lt; 10 And CharValue &gt; -1 Then Code93Char = ChrW(CharValue + 48)
+        'A-Z
+        If CharValue &lt; 36 And CharValue &gt; 9 Then Code93Char = ChrW(CharValue + 55)
+        '-
+        If CharValue = 36 Then Code93Char = ChrW(45)
+        '.
+        If CharValue = 37 Then Code93Char = "."
+        'Space
+        If CharValue = 38 Then Code93Char = "="
+        '$
+        If CharValue = 39 Then Code93Char = "$"
+        '/
+        If CharValue = 40 Then Code93Char = "/"
+        '+
+        If CharValue = 41 Then Code93Char = "+"
+        '%
+        If CharValue = 42 Then Code93Char = "%"
+        '!
+        If CharValue = 43 Then Code93Char = "!"
+        '#
+        If CharValue = 44 Then Code93Char = "#"
+        '&amp;
+        If CharValue = 45 Then Code93Char = "&amp;"
+        '@
+        If CharValue = 46 Then Code93Char = "@"
+    End Function
+
+    Private Function Code93Val(ByVal CharASCValue As Integer) As Integer
+        'Returns a character value from a character
+        'An invalid character value returns 99
+        Code93Val = 99
+        '0-9
+        If CharASCValue &lt; 58 And CharASCValue &gt; 47 Then Code93Val = CharASCValue - 48
+        'A-Z
+        If CharASCValue &lt; 91 And CharASCValue &gt; 64 Then Code93Val = CharASCValue - 55
+        'Space
+        If CharASCValue = 32 Then Code93Val = 38
+        '=
+        If CharASCValue = 61 Then Code93Val = 38
+        '-
+        If CharASCValue = 45 Then Code93Val = 36
+        '.
+        If CharASCValue = 46 Then Code93Val = 37
+        '$
+        If CharASCValue = 36 Then Code93Val = 39
+        '/
+        If CharASCValue = 47 Then Code93Val = 40
+        '+
+        If CharASCValue = 43 Then Code93Val = 41
+        '%
+        If CharASCValue = 37 Then Code93Val = 42
+        '!
+        If CharASCValue = 33 Then Code93Val = 43
+        '#
+        If CharASCValue = 35 Then Code93Val = 44
+        '&amp;
+        If CharASCValue = 38 Then Code93Val = 45
+        '@
+        If CharASCValue = 64 Then Code93Val = 46
+    End Function
+
+
+    Public Function SpliceText(ByVal DataToFormat As String, Optional ByVal SpacingNumber As Integer = 4, Optional ByVal ApplyTilde As Boolean = False) As String
+        'This function inserts a space for every SpacingNumber of characters
+        '2006.2 BDA added the next line to move code to the ProcessTilde function
+        If ApplyTilde Then DataToFormat = ProcessTilde(DataToFormat)
+        HumanReadableText = ""
+        StringLength = Len(DataToFormat)
+        J = 0
+        For I = 1 To StringLength
+            CurrentCharNum = AscW(Mid(DataToFormat, I, 1))
+            If CurrentCharNum &gt; 31 And CurrentCharNum &lt; 128 Then
+                HumanReadableText = HumanReadableText &amp; Mid(DataToFormat, I, 1)
+                J = J + 1
+            End If
+            If (J Mod SpacingNumber) = 0 Then HumanReadableText = HumanReadableText &amp; " "
+        Next I
+        SpliceText = HumanReadableText
+    End Function
+
+
+    Public Function MOD10(ByVal M10NumberData As String) As Integer
+        '***********************************************************************
+        ' This is a general MOD10 function compatible with EAN and UPC standards
+        '***********************************************************************
+        Dim M10StringLength As Integer
+        Dim M10OnlyCorrectData As String
+        Dim M10Factor As Integer
+        Dim M10WeightedTotal As Integer
+        Dim M10CheckDigit As Integer
+        Dim M10I As Integer
+        M10OnlyCorrectData = ""
+        M10StringLength = Len(M10NumberData)
+        'Check to make sure data is numeric and remove dashes, etc.
+        For M10I = 1 To M10StringLength
+            'Add all numbers to OnlyCorrectData string
+            '2006.2 BDA modified the next 2 lines for compatibility with different office versions
+            CurrentCharNum = AscW(Mid(M10NumberData, M10I, 1))
+            If CurrentCharNum &gt; 47 And CurrentCharNum &lt; 58 Then M10OnlyCorrectData = M10OnlyCorrectData &amp; Mid(M10NumberData, M10I, 1)
+        Next M10I
+        'Generate MOD 10 check digit
+        M10Factor = 3
+        M10WeightedTotal = 0
+        M10StringLength = Len(M10NumberData)
+        For M10I = M10StringLength To 1 Step -1
+            'Get the value of each number starting at the end
+            'CurrentCharNum = Mid(M10NumberData, I, 1)
+            'Multiply by the weighting factor which is 3,1,3,1...
+            'and add the sum together
+            M10WeightedTotal = M10WeightedTotal + (Val(Mid(M10NumberData, M10I, 1)) * M10Factor)
+            'Change factor for next calculation
+            M10Factor = 4 - M10Factor
+        Next M10I
+        'Find the CheckDigit by finding the smallest number that = a multiple of 10
+        M10I = (M10WeightedTotal Mod 10)
+        If M10I &lt;&gt; 0 Then
+            M10CheckDigit = (10 - M10I)
+        Else
+            M10CheckDigit = 0
+        End If
+        MOD10 = Str(M10CheckDigit)
+    End Function
+
+
+    Public Function ProcessTilde(ByVal StringToProcess As String) As String
+        ProcessTilde = ""
+        Dim OutString As String
+        Dim CharsAdded As Integer
+        StringLength = Len(StringToProcess)
+        For I = 1 To StringLength
+            If (I &lt; StringLength - 2) And Mid(StringToProcess, I, 2) = "~m" And IsNumeric(Mid(StringToProcess, I + 2, 2)) Then
+                Dim StringToCheck As String
+                WeightValue = Val(Mid(StringToProcess, I + 2, 2))
+                'Dim CharsAdded As Integer
+                For J = I To 1 Step -1
+                    If IsNumeric(Mid(OutString, J, 1)) Then
+                        StringToCheck = StringToCheck &amp; Mid(OutString, J, 1)
+                        CharsAdded = CharsAdded + 1
+                    End If
+                    'when the number of digits added to StringToCheck equals the weight value exit the for loop
+                    If CharsAdded = WeightValue Then
+                        Exit For
+                    End If
+                Next J
+                CheckDigitValue = MOD10(StrReverse(StringToCheck))
+                OutString = OutString &amp; ChrW(CheckDigitValue + 48)
+                I = I + 3
+            ElseIf (I &lt; StringLength - 2) And Mid(StringToProcess, I, 1) = "~" And IsNumeric(Mid(StringToProcess, I + 1, 3)) Then
+                CurrentCharNum = Val(Mid(StringToProcess, I + 1, 3))
+                OutString = OutString &amp; ChrW(CurrentCharNum)
+                I = I + 3
+                'This ElseIf was modified to support using () to add in AIs
+            ElseIf (I &lt; StringLength - 4) And Mid(StringToProcess, I, 1) = "(" And (Mid(StringToProcess, I + 2, 1) = ")" Or Mid(StringToProcess, I + 3, 1) = ")" Or Mid(StringToProcess, I + 4, 1) = ")" Or (Mid(StringToProcess, I + 5, 1) = ")" And (I &lt; StringLength - 5)) Or (Mid(StringToProcess, I + 6, 1) = ")" And (I &lt; StringLength - 6)) Or (Mid(StringToProcess, I + 7, 1) = ")" And (I &lt; StringLength - 4)) Or (Mid(StringToProcess, I + 8, 1) = ")" And (I &lt; StringLength - 4))) Then
+                'Assign ASCII 212-217 depending on how many digits between ()
+                If Mid(StringToProcess, I + 3, 1) = ")" Then OutString = OutString &amp; ChrW(212)
+                If Mid(StringToProcess, I + 4, 1) = ")" Then OutString = OutString &amp; ChrW(213)
+                If Mid(StringToProcess, I + 5, 1) = ")" Then OutString = OutString &amp; ChrW(214)
+                If Mid(StringToProcess, I + 6, 1) = ")" Then OutString = OutString &amp; ChrW(215)
+                If Mid(StringToProcess, I + 7, 1) = ")" Then OutString = OutString &amp; ChrW(216)
+                If Mid(StringToProcess, I + 8, 1) = ")" Then OutString = OutString &amp; ChrW(217)
+                'This ElseIf was modified to exclude ")" from being encoded
+                'ElseIf (I &lt; StringLength - 2) And Mid(StringToProcess, I, 1) = ")" Then
+                '6/2/2010, TB, Fix bug #392, removed - 2 from the if statement
+            ElseIf (I &lt; StringLength) And Mid(StringToProcess, I, 1) = ")" Then
+                'Skip this character by breaking out of the else if
+            Else
+                OutString = OutString &amp; Mid(StringToProcess, I, 1)
+            End If
+        Next I
+        ProcessTilde = OutString
+        StringToProcess = ""
+    End Function
+
+
+    Public Function ProcessEAN5AddOn(ByVal EAN5AddOn As String) As String
+        If Len(EAN5AddOn) = 5 Then
+            EANAddOnToPrint = ""
+            'Get the check digit for the add on
+            Factor = 3
+            WeightedTotal = 0
+            For I = Len(EAN5AddOn) To 1 Step -1
+                'Get the value of each number starting at the end
+                CurrentCharNum = Mid(EAN5AddOn, I, 1)
+                'Multiply by the weighting factor which is 3,9,3,9.
+                'and add the sum together
+                If Factor = 3 Then WeightedTotal = WeightedTotal + CurrentCharNum * 3
+                If Factor = 1 Then WeightedTotal = WeightedTotal + CurrentCharNum * 9
+                'Change factor for next calculation
+                Factor = 4 - Factor
+            Next I
+            'Find the CheckDigit by extracting the right-most number from WeightedTotal
+            CheckDigit = Val(Right(WeightedTotal, 1))
+            'Encode the add-on CheckDigit into the number sets
+            'by using variable parity between character sets A and B
+            Select Case CheckDigit
+                Case 0
+                    Encoding = "BBAAA"
+                Case 1
+                    Encoding = "BABAA"
+                Case 2
+                    Encoding = "BAABA"
+                Case 3
+                    Encoding = "BAAAB"
+                Case 4
+                    Encoding = "ABBAA"
+                Case 5
+                    Encoding = "AABBA"
+                Case 6
+                    Encoding = "AAABB"
+                Case 7
+                    Encoding = "ABABA"
+                Case 8
+                    Encoding = "ABAAB"
+                Case 9
+                    Encoding = "AABAB"
+            End Select
+            'Determine the characters to print for proper barcoding
+            For I = 1 To Len(EAN5AddOn)
+                'Get the value of each number encoded with variable parity
+                CurrentChar = Mid(EAN5AddOn, I, 1)
+                CurrentEncoding = Mid(Encoding, I, 1)
+                'Print different barcodes according to the location of the CurrentChar and CurrentEncoding
+                Select Case CurrentEncoding
+                    Case "A"
+                        If CurrentChar = "0" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(34)
+                        If CurrentChar = "1" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(35)
+                        If CurrentChar = "2" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(36)
+                        If CurrentChar = "3" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(37)
+                        If CurrentChar = "4" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(38)
+                        If CurrentChar = "5" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(44)
+                        If CurrentChar = "6" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(46)
+                        If CurrentChar = "7" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(47)
+                        If CurrentChar = "8" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(58)
+                        If CurrentChar = "9" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(59)
+                    Case "B"
+                        If CurrentChar = "0" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(122)
+                        If CurrentChar = "1" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(61)
+                        If CurrentChar = "2" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(63)
+                        If CurrentChar = "3" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(64)
+                        If CurrentChar = "4" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(91)
+                        If CurrentChar = "5" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(92)
+                        If CurrentChar = "6" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(93)
+                        If CurrentChar = "7" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(95)
+                        If CurrentChar = "8" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(123)
+                        If CurrentChar = "9" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(125)
+                End Select
+                'Add in the space &amp; add-on guard pattern
+                Select Case I
+                    Case 1
+                        EANAddOnToPrint = ChrW(43) &amp; EANAddOnToPrint &amp; ChrW(33)
+                        'Print add-on delineators between each add-on character
+                    Case 2
+                        EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(33)
+                    Case 3
+                        EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(33)
+                    Case 4
+                        EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(33)
+                    Case 5
+                        EANAddOnToPrint = EANAddOnToPrint
+                End Select
+            Next I
+        End If
+        ProcessEAN5AddOn = EANAddOnToPrint
+    End Function
+
+
+    Public Function ProcessEAN2AddOn(ByVal EAN2AddOn As String) As String
+        'Process the 2 digit add on
+        EANAddOnToPrint = ""
+        If Len(EAN2AddOn) = 2 Then
+            'Get encoding for add on
+            For I = 0 To 99 Step 4
+                If Val(EAN2AddOn) = I Then Encoding = "AA"
+                If Val(EAN2AddOn) = I + 1 Then Encoding = "AB"
+                If Val(EAN2AddOn) = I + 2 Then Encoding = "BA"
+                If Val(EAN2AddOn) = I + 3 Then Encoding = "BB"
+            Next I
+            For I = 1 To Len(EAN2AddOn)
+                'Get the value of each number
+                'It is encoded with variable parity
+                CurrentChar = Mid(EAN2AddOn, I, 1)
+                CurrentEncoding = Mid(Encoding, I, 1)
+                'Print different barcodes according to the location of the CurrentChar and CurrentEncoding
+                Select Case CurrentEncoding
+                    Case "A"
+                        If CurrentChar = "0" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(34)
+                        If CurrentChar = "1" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(35)
+                        If CurrentChar = "2" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(36)
+                        If CurrentChar = "3" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(37)
+                        If CurrentChar = "4" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(38)
+                        If CurrentChar = "5" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(44)
+                        If CurrentChar = "6" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(46)
+                        If CurrentChar = "7" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(47)
+                        If CurrentChar = "8" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(58)
+                        If CurrentChar = "9" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(59)
+                    Case "B"
+                        If CurrentChar = "0" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(122)
+                        If CurrentChar = "1" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(61)
+                        If CurrentChar = "2" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(63)
+                        If CurrentChar = "3" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(64)
+                        If CurrentChar = "4" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(91)
+                        If CurrentChar = "5" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(92)
+                        If CurrentChar = "6" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(93)
+                        If CurrentChar = "7" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(95)
+                        If CurrentChar = "8" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(123)
+                        If CurrentChar = "9" Then EANAddOnToPrint = EANAddOnToPrint &amp; ChrW(125)
+                End Select
+                'Add in the space &amp; add-on guard pattern
+                Select Case I
+                    Case 1
+                        EANAddOnToPrint = ChrW(43) &amp; EANAddOnToPrint &amp; ChrW(33)
+                        'Print add-on delineators between each add-on character
+                    Case 2
+                        EANAddOnToPrint = EANAddOnToPrint
+                End Select
+            Next I
+        End If
+        ProcessEAN2AddOn = ProcessEAN2AddOn &amp; EANAddOnToPrint
+    End Function</Code>
+  <Width>7.58325in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.80277in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>PURCHASE INVOICE</Value>
+                  <Style>
+                    <FontSize>16pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>0.71361in</Top>
+          <Left>5.08325in</Left>
+          <Height>0.24291in</Height>
+          <Width>2.5in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Image1">
+          <Source>Database</Source>
+          <Value>=First(Fields!Logo.Value, "DataSet2")</Value>
+          <MIMEType>image/jpeg</MIMEType>
+          <Sizing>FitProportional</Sizing>
+          <Height>1.10416in</Height>
+          <Width>1.19792in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="CompanyName">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!CompanyName.Value, "DataSet2")</Value>
+                  <Style>
+                    <FontSize>14pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>CompanyName</rd:DefaultName>
+          <Left>1.26737in</Left>
+          <Height>0.325in</Height>
+          <Width>5.80547in</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Address">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!Address.Value, "DataSet2")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Address</rd:DefaultName>
+          <Top>0.325in</Top>
+          <Left>1.26737in</Left>
+          <Height>0.18056in</Height>
+          <Width>4.68692in</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Phone">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!Phone.Value, "DataSet2")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Phone</rd:DefaultName>
+          <Top>0.50556in</Top>
+          <Left>1.26737in</Left>
+          <Height>0.16667in</Height>
+          <Width>4.70081in</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Line Name="Line2">
+          <Top>0.9775in</Top>
+          <Left>4.8195in</Left>
+          <Height>0in</Height>
+          <Width>2.76375in</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
+        <Textbox Name="Purch_bill_no">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Code.Code128(First(Fields!Purch_bill_no.Value, "DataSet1"))</Value>
+                  <Style>
+                    <FontFamily>AdvC128c</FontFamily>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Purch_bill_no</rd:DefaultName>
+          <Top>1.13194in</Top>
+          <Left>6.66325in</Left>
+          <Height>0.20003in</Height>
+          <Width>0.92in</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="ContactName">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!ContactName.Value, "DataSet1")</Value>
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ContactName</rd:DefaultName>
+          <Top>1.15972in</Top>
+          <Height>0.22917in</Height>
+          <Width>2.69792in</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="ContactAddress">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!ContactAddress.Value, "DataSet1")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ContactAddress</rd:DefaultName>
+          <Top>1.38889in</Top>
+          <Height>0.19306in</Height>
+          <Width>3.63542in</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Contact_no">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!Contact_no.Value, "DataSet1")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Contact_no</rd:DefaultName>
+          <Top>1.58195in</Top>
+          <Height>0.21528in</Height>
+          <Width>2.88528in</Width>
+          <ZIndex>9</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Purch_date">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Dated : " &amp; CDate(First(Fields!Purch_date.Value, "DataSet1")).ToString("dd MMMM yyyy")</Value>
+                  <Style>
+                    <Format>dd-MMM-yy</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Purch_date</rd:DefaultName>
+          <Top>1.55277in</Top>
+          <Left>5.57644in</Left>
+          <Height>0.25in</Height>
+          <Width>2.00681in</Width>
+          <ZIndex>10</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Purch_bill_no2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Bill No. " &amp; First(Fields!Purch_bill_no.Value, "DataSet1")</Value>
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Purch_bill_no</rd:DefaultName>
+          <Top>1.35274in</Top>
+          <Left>5.57644in</Left>
+          <Height>0.20003in</Height>
+          <Width>2.00681in</Width>
+          <ZIndex>11</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox97">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox97</rd:DefaultName>
+          <Top>0.43583in</Top>
+          <Left>5.99596in</Left>
+          <Height>0.25in</Height>
+          <Width>1.58729in</Width>
+          <ZIndex>12</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>6in</PageHeight>
+    <PageWidth>8.27in</PageWidth>
+    <LeftMargin>0.25in</LeftMargin>
+    <RightMargin>0.25in</RightMargin>
+    <TopMargin>0.25in</TopMargin>
+    <BottomMargin>0.25in</BottomMargin>
+    <Style />
+  </Page>
+  <rd:ReportID>4e572112-fbea-42dc-9c5e-ff6adab275f4</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

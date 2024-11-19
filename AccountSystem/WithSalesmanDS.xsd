@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WithSalesmanDS" targetNamespace="http://tempuri.org/WithSalesmanDS.xsd" xmlns:mstns="http://tempuri.org/WithSalesmanDS.xsd" xmlns="http://tempuri.org/WithSalesmanDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AccountSystem.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableTableAdapter" GeneratorDataComponentClassName="DataTableTableAdapter" Name="DataTable" UserDataComponentName="DataTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Account.ContactName, tbl_Product.Prod_name, SWith.Issue_date, SWith.Issued_bill_no, SWith.prod_qty, SWith.sal, SWith.rat, tbl_Unit.Unit_title, 0 AS bf
+FROM            tbl_Product INNER JOIN
+                             (SELECT        tblIssue.Issue_date, 0 AS sal, tblIssue.Issued_bill_no, tblIssue.Contact_id, TblIssueDTL.prod_id, 0 AS rat, TblIssueDTL.prod_qty
+                               FROM            tblIssue INNER JOIN
+                                                         TblIssueDTL ON tblIssue.Issue_id = TblIssueDTL.Issue_ID
+                               WHERE        (tblIssue.CompID = @ComId)
+                               UNION
+                               SELECT        tbl_Sale.Sale_date, tbl_SaleDetail.prod_qty, tbl_Sale.Sale_bill_no, tbl_Sale.Contact_id, tbl_SaleDetail.prod_id, tbl_SaleDetail.Prod_rate,
+                                                        0 AS Issu
+                               FROM            tbl_Sale INNER JOIN
+                                                        tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id
+                               WHERE        (tbl_Sale.CompID = @ComId)) AS SWith ON tbl_Product.Prod_id = SWith.prod_id INNER JOIN
+                         tbl_Account ON SWith.Contact_id = tbl_Account.Contact_id INNER JOIN
+                         tbl_Unit ON tbl_Product.Unit_id = tbl_Unit.Unit_id
+WHERE        (SWith.Issue_date BETWEEN @d1 AND @d2) AND (tbl_Account.ContactName = @cont)
+UNION
+SELECT        tbl_Account_1.ContactName, tbl_Product_1.Prod_name, '1/1/1900' AS issdate, SUM(0) AS billno, SUM(0) AS pu, SUM(0) AS sal, SUM(0) AS rat, tbl_Unit_1.Unit_title,
+                         SUM(SWith_1.prod_qty - SWith_1.sal) AS bf
+FROM            tbl_Product AS tbl_Product_1 INNER JOIN
+                             (SELECT        tblIssue_1.Issue_date, 0 AS sal, tblIssue_1.Issued_bill_no, tblIssue_1.Contact_id, TblIssueDTL_1.prod_id, 0 AS rat, TblIssueDTL_1.prod_qty
+                               FROM            tblIssue AS tblIssue_1 INNER JOIN
+                                                         TblIssueDTL AS TblIssueDTL_1 ON tblIssue_1.Issue_id = TblIssueDTL_1.Issue_ID
+                               WHERE        (tblIssue_1.CompID = @ComId)
+                               UNION
+                               SELECT        tbl_Sale_1.Sale_date, tbl_SaleDetail_1.prod_qty, tbl_Sale_1.Sale_bill_no, tbl_Sale_1.Contact_id, tbl_SaleDetail_1.prod_id,
+                                                        tbl_SaleDetail_1.Prod_rate, 0 AS Issu
+                               FROM            tbl_Sale AS tbl_Sale_1 INNER JOIN
+                                                        tbl_SaleDetail AS tbl_SaleDetail_1 ON tbl_Sale_1.Sale_id = tbl_SaleDetail_1.Sale_id
+                               WHERE        (tbl_Sale_1.CompID = @ComId)) AS SWith_1 ON tbl_Product_1.Prod_id = SWith_1.prod_id INNER JOIN
+                         tbl_Account AS tbl_Account_1 ON SWith_1.Contact_id = tbl_Account_1.Contact_id INNER JOIN
+                         tbl_Unit AS tbl_Unit_1 ON tbl_Product_1.Unit_id = tbl_Unit_1.Unit_id
+WHERE        (SWith_1.Issue_date &lt; CONVERT(DATETIME, @d1, 102)) AND (tbl_Account_1.ContactName = @cont)
+GROUP BY tbl_Account_1.ContactName, tbl_Product_1.Prod_name, tbl_Unit_1.Unit_title</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="d1" ColumnName="Issue_date" DataSourceName="" DataTypeServer="date" DbType="Date" Direction="Input" ParameterName="@d1" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="Issue_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d2" ColumnName="Issue_date" DataSourceName="" DataTypeServer="date" DbType="Date" Direction="Input" ParameterName="@d2" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="Issue_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="cont" ColumnName="ContactName" DataSourceName="" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@cont" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="ContactName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ComId" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ComId" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="Issue_date" DataSetColumn="Issue_date" />
+              <Mapping SourceColumn="prod_qty" DataSetColumn="prod_qty" />
+              <Mapping SourceColumn="sal" DataSetColumn="sal" />
+              <Mapping SourceColumn="rat" DataSetColumn="rat" />
+              <Mapping SourceColumn="Unit_title" DataSetColumn="Unit_title" />
+              <Mapping SourceColumn="Issued_bill_no" DataSetColumn="Issued_bill_no" />
+              <Mapping SourceColumn="bf" DataSetColumn="bf" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="SELECT tbl_Account.ContactName, tbl_Product_2.Prod_name, SWith.Issue_date, SWith.Issued_bill_no, SWith.prod_qty, SWith.sal, SWith.rat, tbl_Unit.Unit_title, 0 AS bf FROM tbl_Product AS tbl_Product_2 INNER JOIN (SELECT tblIssue.Issue_date, 0 AS sal, tblIssue.Issued_bill_no, tblIssue.Contact_id, TblIssueDTL.prod_id, 0 AS rat, TblIssueDTL.prod_qty FROM tblIssue INNER JOIN TblIssueDTL ON tblIssue.Issue_id = TblIssueDTL.Issue_ID WHERE (tblIssue.CompID = @ComId) UNION SELECT tbl_Sale.Sale_date, tbl_SaleDetail.prod_qty, tbl_Sale.Sale_bill_no, tbl_Sale.Contact_id, tbl_SaleDetail.prod_id, tbl_SaleDetail.Prod_rate, 0 AS Issu FROM tbl_Sale INNER JOIN tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id WHERE (tbl_Sale.CompID = @ComId)) AS SWith ON tbl_Product_2.Prod_id = SWith.prod_id INNER JOIN tbl_Account ON SWith.Contact_id = tbl_Account.Contact_id INNER JOIN tbl_Unit ON tbl_Product_2.Unit_id = tbl_Unit.Unit_id WHERE (SWith.Issue_date BETWEEN @d1 AND @d2) AND (tbl_Account.ContactName = @cont) UNION SELECT tbl_Account_1.ContactName, tbl_Product_1.Prod_name, '1/1/1900' AS issdate, SUM(0) AS billno, SUM(0) AS pu, SUM(0) AS sal, SUM(0) AS rat, tbl_Unit_1.Unit_title, SUM(SWith_1.prod_qty - SWith_1.sal) AS bf FROM tbl_Product AS tbl_Product_1 INNER JOIN (SELECT tblIssue_1.Issue_date, 0 AS sal, tblIssue_1.Issued_bill_no, tblIssue_1.Contact_id, TblIssueDTL_1.prod_id, 0 AS rat, TblIssueDTL_1.prod_qty FROM tblIssue AS tblIssue_1 INNER JOIN TblIssueDTL AS TblIssueDTL_1 ON tblIssue_1.Issue_id = TblIssueDTL_1.Issue_ID WHERE (tblIssue_1.CompID = @ComId) UNION SELECT tbl_Sale_1.Sale_date, tbl_SaleDetail_1.prod_qty, tbl_Sale_1.Sale_bill_no, tbl_Sale_1.Contact_id, tbl_SaleDetail_1.prod_id, tbl_SaleDetail_1.Prod_rate, 0 AS Issu FROM tbl_Sale AS tbl_Sale_1 INNER JOIN tbl_SaleDetail AS tbl_SaleDetail_1 ON tbl_Sale_1.Sale_id = tbl_SaleDetail_1.Sale_id WHERE (tbl_Sale_1.CompID = @ComId)) AS SWith_1 ON tbl_Product_1.Prod_id = SWith_1.prod_id INNER JOIN tbl_Account AS tbl_Account_1 ON SWith_1.Contact_id = tbl_Account_1.Contact_id INNER JOIN tbl_Unit AS tbl_Unit_1 ON tbl_Product_1.Unit_id = tbl_Unit_1.Unit_id WHERE (SWith_1.Issue_date &lt; CONVERT(DATETIME, @d1, 102)) AND (tbl_Account_1.ContactName = @cont) GROUP BY tbl_Account_1.ContactName, tbl_Product_1.Prod_name, tbl_Unit_1.Unit_title" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        MyV.ContactName, CASE CONVERT(varchar(3), MyV.Prod_name) WHEN 'HLR' THEN 'HLR' ELSE MyV.Prod_name END AS Prod_name, MyV.Issue_date,
+                         MyV.Issued_bill_no, SUM(MyV.prod_qty) AS prod_qty, SUM(MyV.sal) AS sal, MyV.rat, MyV.Unit_title, SUM(MyV.bf) AS bf
+FROM            tbl_Product INNER JOIN
+                             (SELECT        tbl_Account.ContactName, tbl_Product_2.Prod_name, SWith.Issue_date, SWith.Issued_bill_no, SWith.prod_qty, SWith.sal, SWith.rat,
+                                                         tbl_Unit.Unit_title, 0 AS bf
+                               FROM            tbl_Product AS tbl_Product_2 INNER JOIN
+                                                             (SELECT        tblIssue.Issue_date, 0 AS sal, tblIssue.Issued_bill_no, tblIssue.Contact_id, TblIssueDTL.prod_id, 0 AS rat, TblIssueDTL.prod_qty
+                                                               FROM            tblIssue INNER JOIN
+                                                                                         TblIssueDTL ON tblIssue.Issue_id = TblIssueDTL.Issue_ID
+                                                               WHERE        (tblIssue.CompID = @ComId)
+                                                               UNION
+                                                               SELECT        tbl_Sale.Sale_date, tbl_SaleDetail.prod_qty, tbl_Sale.Sale_bill_no, tbl_Sale.Contact_id, tbl_SaleDetail.prod_id,
+                                                                                        tbl_SaleDetail.Prod_rate, 0 AS Issu
+                                                               FROM            tbl_Sale INNER JOIN
+                                                                                        tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id
+                                                               WHERE        (tbl_Sale.CompID = @ComId)) AS SWith ON tbl_Product_2.Prod_id = SWith.prod_id INNER JOIN
+                                                         tbl_Account ON SWith.Contact_id = tbl_Account.Contact_id INNER JOIN
+                                                         tbl_Unit ON tbl_Product_2.Unit_id = tbl_Unit.Unit_id
+                               WHERE        (SWith.Issue_date BETWEEN @d1 AND @d2) AND (tbl_Account.ContactName = @cont)
+                               UNION
+                               SELECT        tbl_Account_1.ContactName, tbl_Product_1.Prod_name, '1/1/1900' AS issdate, SUM(0) AS billno, SUM(0) AS pu, SUM(0) AS sal, SUM(0) AS rat,
+                                                        tbl_Unit_1.Unit_title, SUM(SWith_1.prod_qty - SWith_1.sal) AS bf
+                               FROM            tbl_Product AS tbl_Product_1 INNER JOIN
+                                                            (SELECT        tblIssue_1.Issue_date, 0 AS sal, tblIssue_1.Issued_bill_no, tblIssue_1.Contact_id, TblIssueDTL_1.prod_id, 0 AS rat,
+                                                                                        TblIssueDTL_1.prod_qty
+                                                              FROM            tblIssue AS tblIssue_1 INNER JOIN
+                                                                                        TblIssueDTL AS TblIssueDTL_1 ON tblIssue_1.Issue_id = TblIssueDTL_1.Issue_ID
+                                                              WHERE        (tblIssue_1.CompID = @ComId)
+                                                              UNION
+                                                              SELECT        tbl_Sale_1.Sale_date, tbl_SaleDetail_1.prod_qty, tbl_Sale_1.Sale_bill_no, tbl_Sale_1.Contact_id, tbl_SaleDetail_1.prod_id,
+                                                                                       tbl_SaleDetail_1.Prod_rate, 0 AS Issu
+                                                              FROM            tbl_Sale AS tbl_Sale_1 INNER JOIN
+                                                                                       tbl_SaleDetail AS tbl_SaleDetail_1 ON tbl_Sale_1.Sale_id = tbl_SaleDetail_1.Sale_id
+                                                              WHERE        (tbl_Sale_1.CompID = @ComId)) AS SWith_1 ON tbl_Product_1.Prod_id = SWith_1.prod_id INNER JOIN
+                                                        tbl_Account AS tbl_Account_1 ON SWith_1.Contact_id = tbl_Account_1.Contact_id INNER JOIN
+                                                        tbl_Unit AS tbl_Unit_1 ON tbl_Product_1.Unit_id = tbl_Unit_1.Unit_id
+                               WHERE        (SWith_1.Issue_date &lt; CONVERT(DATETIME, @d1, 102)) AND (tbl_Account_1.ContactName = @cont)
+                               GROUP BY tbl_Account_1.ContactName, tbl_Product_1.Prod_name, tbl_Unit_1.Unit_title) AS MyV ON tbl_Product.Prod_name = MyV.Prod_name
+GROUP BY MyV.ContactName, CASE CONVERT(varchar(3), MyV.Prod_name) WHEN 'HLR' THEN 'HLR' ELSE MyV.Prod_name END, MyV.Issue_date, MyV.Issued_bill_no,
+                         MyV.Unit_title, MyV.rat</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="d1" ColumnName="" DataSourceName="" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@d1" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d2" ColumnName="" DataSourceName="" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@d2" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="cont" ColumnName="" DataSourceName="" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@cont" Precision="0" Scale="0" Size="50" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ComId" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ComId" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="Issue_date" DataSetColumn="Issue_date" />
+              <Mapping SourceColumn="Issued_bill_no" DataSetColumn="Issued_bill_no" />
+              <Mapping SourceColumn="prod_qty" DataSetColumn="prod_qty" />
+              <Mapping SourceColumn="sal" DataSetColumn="sal" />
+              <Mapping SourceColumn="rat" DataSetColumn="rat" />
+              <Mapping SourceColumn="Unit_title" DataSetColumn="Unit_title" />
+              <Mapping SourceColumn="bf" DataSetColumn="bf" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        ISNULL(V_Issuance.Issuance, 0) - ISNULL(V_Sales.Sales, 0) AS WithS, ISNULL(tbl_Account.ContactName, tbl_Account_1.ContactName) AS ContactName,
+                         ISNULL(tbl_Product_1.Prod_name, tbl_Product.Prod_name) AS Prod_name
+FROM            tbl_Account AS tbl_Account_1 INNER JOIN
+                             (SELECT        SUM(tbl_SaleDetail.prod_qty) AS Sales, tbl_SaleDetail.prod_id, tbl_Sale.Contact_id
+                               FROM            tbl_Sale INNER JOIN
+                                                         tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id
+                               WHERE        (tbl_Sale.Sale_date &lt;= CONVERT(DATETIME, @D1, 102)) AND (tbl_Sale.CompID = @Comid)
+                               GROUP BY tbl_SaleDetail.prod_id, tbl_Sale.Contact_id) AS V_Sales ON tbl_Account_1.Contact_id = V_Sales.Contact_id INNER JOIN
+                         tbl_Product ON V_Sales.prod_id = tbl_Product.Prod_id FULL OUTER JOIN
+                         tbl_Account INNER JOIN
+                             (SELECT        SUM(TblIssueDTL.prod_qty) AS Issuance, TblIssueDTL.prod_id, tblIssue.Contact_id
+                               FROM            tblIssue INNER JOIN
+                                                         TblIssueDTL ON tblIssue.Issue_id = TblIssueDTL.Issue_ID
+                               WHERE        (tblIssue.Issue_date &lt; CONVERT(DATETIME, @D1, 102)) AND (tblIssue.CompID = @Comid)
+                               GROUP BY TblIssueDTL.prod_id, tblIssue.Contact_id) AS V_Issuance ON tbl_Account.Contact_id = V_Issuance.Contact_id INNER JOIN
+                         tbl_Product AS tbl_Product_1 ON V_Issuance.prod_id = tbl_Product_1.Prod_id ON V_Sales.Contact_id = V_Issuance.Contact_id AND
+                         V_Sales.prod_id = V_Issuance.prod_id
+UNION
+SELECT        ISNULL(V_Stock.Stock, 0) - ISNULL(V_WithS.WithS, 0) AS INHAND, 'In Hand' AS Titles, ISNULL(tbl_Product_2.Prod_name, tbl_Product_1.Prod_name)
+                         AS Products
+FROM            tbl_Product AS tbl_Product_1 INNER JOIN
+                             (SELECT        SUM(V_Issuance_1.Issuance - ISNULL(V_Sales_2.Sales, 0)) AS WithS, V_Issuance_1.prod_id
+                               FROM            (SELECT        SUM(tbl_SaleDetail_2.prod_qty) AS Sales, tbl_SaleDetail_2.prod_id
+                                                         FROM            tbl_Sale AS tbl_Sale_2 INNER JOIN
+                                                                                   tbl_SaleDetail AS tbl_SaleDetail_2 ON tbl_Sale_2.Sale_id = tbl_SaleDetail_2.Sale_id
+                                                         WHERE        (tbl_Sale_2.Sale_date &lt;= CONVERT(DATETIME, @D1, 102)) AND (tbl_Sale_2.CompID = @Comid)
+                                                         GROUP BY tbl_SaleDetail_2.prod_id) AS V_Sales_2 RIGHT OUTER JOIN
+                                                             (SELECT        SUM(TblIssueDTL_1.prod_qty) AS Issuance, TblIssueDTL_1.prod_id
+                                                               FROM            tblIssue AS tblIssue_1 INNER JOIN
+                                                                                         TblIssueDTL AS TblIssueDTL_1 ON tblIssue_1.Issue_id = TblIssueDTL_1.Issue_ID
+                                                               WHERE        (tblIssue_1.Issue_date &lt;= CONVERT(DATETIME, @D1, 102)) AND (tblIssue_1.CompID = @Comid)
+                                                               GROUP BY TblIssueDTL_1.prod_id) AS V_Issuance_1 ON V_Sales_2.prod_id = V_Issuance_1.prod_id
+                               GROUP BY V_Issuance_1.prod_id
+                               HAVING         (SUM(V_Issuance_1.Issuance - ISNULL(V_Sales_2.Sales, 0)) &gt; 0)) AS V_WithS ON tbl_Product_1.Prod_id = V_WithS.prod_id FULL OUTER JOIN
+                             (SELECT        V_Purch.Prod_id, V_Purch.Purchased - ISNULL(V_Sales_1.Sales, 0) AS Stock
+                               FROM            (SELECT        SUM(tbl_Purchase_Detail.Prod_qty) AS Purchased, tbl_Purchase_Detail.Prod_id
+                                                         FROM            tbl_Purchase INNER JOIN
+                                                                                   tbl_Purchase_Detail ON tbl_Purchase.Purch_id = tbl_Purchase_Detail.Purch_id
+                                                         WHERE        (tbl_Purchase.Purch_date &lt;= CONVERT(DATETIME, @D1, 102)) AND (tbl_Purchase.CompID = @Comid)
+                                                         GROUP BY tbl_Purchase_Detail.Prod_id) AS V_Purch LEFT OUTER JOIN
+                                                             (SELECT        SUM(tbl_SaleDetail_1.prod_qty) AS Sales, tbl_SaleDetail_1.prod_id
+                                                               FROM            tbl_Sale AS tbl_Sale_1 INNER JOIN
+                                                                                         tbl_SaleDetail AS tbl_SaleDetail_1 ON tbl_Sale_1.Sale_id = tbl_SaleDetail_1.Sale_id
+                                                               WHERE        (tbl_Sale_1.Sale_date &lt;= CONVERT(DATETIME, @D1, 102)) AND (tbl_Sale_1.CompID = @Comid)
+                                                               GROUP BY tbl_SaleDetail_1.prod_id) AS V_Sales_1 ON V_Purch.Prod_id = V_Sales_1.prod_id) AS V_Stock INNER JOIN
+                         tbl_Product AS tbl_Product_2 ON V_Stock.Prod_id = tbl_Product_2.Prod_id ON V_WithS.prod_id = V_Stock.Prod_id</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="" DataSourceName="" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Comid" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Comid" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WithS" DataSetColumn="WithS" />
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Salesman_DSTableAdapter" GeneratorDataComponentClassName="Salesman_DSTableAdapter" Name="Salesman_DS" UserDataComponentName="Salesman_DSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Sale.Sale_date, tbl_Sale.Sale_bill_no, TblAccEntry.EntryAccName AS ContactName, TblAccEntry.BAddress AS ContactAddress, SUM(CASE WHEN InvoiceType = 1 THEN (tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) 
+                         ELSE 0 END) AS S, TblAccEntry_1.EntryAccName AS Salesman, SUM(CASE WHEN InvoiceType = 1 THEN 0 ELSE (tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) END) AS SR, SUM(tbl_Sale.ItemDiscount) AS Disct, 
+                         tbl_Sale.AdditionalDiscount AS SPDisct
+FROM            tbl_Sale INNER JOIN
+                         tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id INNER JOIN
+                         TblAccEntry ON tbl_Sale.Contact_id = TblAccEntry.EntryAccID INNER JOIN
+                         TblAccEntry AS TblAccEntry_1 ON tbl_Sale.Salesman = TblAccEntry_1.EntryAccID
+WHERE        (CONVERT(varchar, tbl_Sale.Salesman) LIKE @Salesman)
+GROUP BY tbl_Sale.Sale_date, tbl_Sale.Sale_bill_no, TblAccEntry.EntryAccName, TblAccEntry.BAddress, TblAccEntry_1.EntryAccName, tbl_Sale.AdditionalDiscount
+HAVING        (tbl_Sale.Sale_date BETWEEN @D1 AND @D2)
+ORDER BY tbl_Sale.Sale_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Salesman" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@Salesman" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sale_date" DataSetColumn="Sale_date" />
+              <Mapping SourceColumn="Sale_bill_no" DataSetColumn="Sale_bill_no" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="ContactAddress" DataSetColumn="ContactAddress" />
+              <Mapping SourceColumn="Salesman" DataSetColumn="Salesman" />
+              <Mapping SourceColumn="SPDisct" DataSetColumn="SPDisct" />
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="SR" DataSetColumn="SR" />
+              <Mapping SourceColumn="Disct" DataSetColumn="Disct" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SchemeDSTableAdapter" GeneratorDataComponentClassName="SchemeDSTableAdapter" Name="SchemeDS" UserDataComponentName="SchemeDSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Sale.Sale_date, tbl_Sale.Sale_bill_no, TblAccEntry.EntryAccName AS ContactName, TblAccEntry.BAddress AS ContactAddress, SUM(tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) AS S, tbl_Sale.ItemDiscount AS Disct, 
+                         SUM(0) AS DisA, tbl_SaleDetail.Bns, SUM(tbl_Sale.AdditionalDiscount) AS SPDisct
+FROM            tbl_Sale INNER JOIN
+                         tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id INNER JOIN
+                         TblAccEntry ON tbl_Sale.Contact_id = TblAccEntry.EntryAccID
+GROUP BY tbl_Sale.Sale_date, tbl_Sale.Sale_bill_no, tbl_SaleDetail.Bns, TblAccEntry.EntryAccName, TblAccEntry.BAddress, tbl_Sale.ItemDiscount
+HAVING        (tbl_Sale.Sale_date BETWEEN @D1 AND @D2) AND (SUM(ISNULL(tbl_Sale.ItemDiscount, 0) + ISNULL(tbl_Sale.AdditionalDiscount, 0) + ISNULL(tbl_SaleDetail.Bns, 0)) &lt;&gt; 0)
+ORDER BY tbl_Sale.Sale_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sale_date" DataSetColumn="Sale_date" />
+              <Mapping SourceColumn="Sale_bill_no" DataSetColumn="Sale_bill_no" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="ContactAddress" DataSetColumn="ContactAddress" />
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="Bns" DataSetColumn="Bns" />
+              <Mapping SourceColumn="SPDisct" DataSetColumn="SPDisct" />
+              <Mapping SourceColumn="Disct" DataSetColumn="Disct" />
+              <Mapping SourceColumn="DisA" DataSetColumn="DisA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalesWiseDSTableAdapter" GeneratorDataComponentClassName="SalesWiseDSTableAdapter" Name="SalesWiseDS" UserDataComponentName="SalesWiseDSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Sale.Sale_date, dbo.fn_Col_to_Row(tbl_Sale.Contact_id, tbl_Sale.Sale_date) AS BNo, TblAccEntry.EntryAccName AS ContactName, TblAccEntry.BAddress AS ContactAddress, tbl_Sale.TotalAmount AS S, 
+                         tbl_Sale.ItemDiscount AS Disct, tbl_Sale.AdditionalDiscount AS Bns
+FROM            tbl_Sale INNER JOIN
+                         TblAccEntry ON tbl_Sale.Contact_id = TblAccEntry.EntryAccID
+WHERE        (CONVERT(varchar, tbl_Sale.Contact_id) LIKE @Ct)
+GROUP BY tbl_Sale.Sale_date, dbo.fn_Col_to_Row(tbl_Sale.Contact_id, tbl_Sale.Sale_date), TblAccEntry.EntryAccName, TblAccEntry.BAddress, tbl_Sale.TotalAmount, tbl_Sale.ItemDiscount, tbl_Sale.AdditionalDiscount
+HAVING        (tbl_Sale.Sale_date BETWEEN @D1 AND @D2)
+ORDER BY tbl_Sale.Sale_date</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Ct" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@Ct" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="Sale_date" DataSourceName="BaadshahTires.dbo.tbl_Sale" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@D2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sale_date" DataSetColumn="Sale_date" />
+              <Mapping SourceColumn="BNo" DataSetColumn="BNo" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="ContactAddress" DataSetColumn="ContactAddress" />
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="Disct" DataSetColumn="Disct" />
+              <Mapping SourceColumn="Bns" DataSetColumn="Bns" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PurchaseWiseDSTableAdapter" GeneratorDataComponentClassName="PurchaseWiseDSTableAdapter" Name="PurchaseWiseDS" UserDataComponentName="PurchaseWiseDSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Purchase.Purch_date, dbo.fn_Col_to_RowP(tbl_Purchase.Contact_id, tbl_Purchase.Purch_date) AS BNo, TblAccEntry.EntryAccName AS ContactName, TblAccEntry.BAddress AS ContactAddress, 
+                         tbl_Purchase.TotalAmount AS S, SUM(tbl_Purchase.ItemDiscount) AS Disct, SUM(tbl_Purchase.AdditionalDiscount) AS Bns
+FROM            tbl_Purchase INNER JOIN
+                         TblAccEntry ON tbl_Purchase.Contact_id = TblAccEntry.EntryAccID
+WHERE        (CONVERT(varchar, tbl_Purchase.Contact_id) LIKE @ct)
+GROUP BY dbo.fn_Col_to_RowP(tbl_Purchase.Contact_id, tbl_Purchase.Purch_date), tbl_Purchase.Purch_date, TblAccEntry.EntryAccName, TblAccEntry.BAddress, tbl_Purchase.TotalAmount
+HAVING        (tbl_Purchase.Purch_date BETWEEN @d1 AND @d2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ct" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@ct" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d1" ColumnName="Purch_date" DataSourceName="BaadshahTires.dbo.tbl_Purchase" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@d1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Purch_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d2" ColumnName="Purch_date" DataSourceName="BaadshahTires.dbo.tbl_Purchase" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@d2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Purch_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Purch_date" DataSetColumn="Purch_date" />
+              <Mapping SourceColumn="BNo" DataSetColumn="BNo" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="ContactAddress" DataSetColumn="ContactAddress" />
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="Disct" DataSetColumn="Disct" />
+              <Mapping SourceColumn="Bns" DataSetColumn="Bns" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WithSalesmanDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WithSalesmanDS" msprop:Generator_UserDSName="WithSalesmanDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable" msprop:Generator_TableClassName="DataTableDataTable" msprop:Generator_TableVarName="tableDataTable" msprop:Generator_TablePropName="DataTable" msprop:Generator_RowDeletingName="DataTableRowDeleting" msprop:Generator_RowChangingName="DataTableRowChanging" msprop:Generator_RowEvHandlerName="DataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableRowDeleted" msprop:Generator_UserTableName="DataTable" msprop:Generator_RowChangedName="DataTableRowChanged" msprop:Generator_RowEvArgName="DataTableRowChangeEvent" msprop:Generator_RowClassName="DataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_name" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Issue_date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIssue_date" msprop:Generator_ColumnPropNameInRow="Issue_date" msprop:Generator_ColumnPropNameInTable="Issue_dateColumn" msprop:Generator_UserColumnName="Issue_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="prod_qty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnprod_qty" msprop:Generator_ColumnPropNameInRow="prod_qty" msprop:Generator_ColumnPropNameInTable="prod_qtyColumn" msprop:Generator_UserColumnName="prod_qty" type="xs:int" minOccurs="0" />
+              <xs:element name="sal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsal" msprop:Generator_ColumnPropNameInRow="sal" msprop:Generator_ColumnPropNameInTable="salColumn" msprop:Generator_UserColumnName="sal" type="xs:int" minOccurs="0" />
+              <xs:element name="rat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnrat" msprop:Generator_ColumnPropNameInRow="rat" msprop:Generator_ColumnPropNameInTable="ratColumn" msprop:Generator_UserColumnName="rat" type="xs:double" minOccurs="0" />
+              <xs:element name="Unit_title" msprop:Generator_ColumnVarNameInTable="columnUnit_title" msprop:Generator_ColumnPropNameInRow="Unit_title" msprop:Generator_ColumnPropNameInTable="Unit_titleColumn" msprop:Generator_UserColumnName="Unit_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Issued_bill_no" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIssued_bill_no" msprop:Generator_ColumnPropNameInRow="Issued_bill_no" msprop:Generator_ColumnPropNameInTable="Issued_bill_noColumn" msprop:Generator_UserColumnName="Issued_bill_no" type="xs:int" minOccurs="0" />
+              <xs:element name="bf" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnbf" msprop:Generator_ColumnPropNameInRow="bf" msprop:Generator_ColumnPropNameInTable="bfColumn" msprop:Generator_UserColumnName="bf" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prod_name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Issue_date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIssue_date" msprop:Generator_ColumnPropNameInRow="Issue_date" msprop:Generator_ColumnPropNameInTable="Issue_dateColumn" msprop:Generator_UserColumnName="Issue_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Issued_bill_no" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIssued_bill_no" msprop:Generator_ColumnPropNameInRow="Issued_bill_no" msprop:Generator_ColumnPropNameInTable="Issued_bill_noColumn" msprop:Generator_UserColumnName="Issued_bill_no" type="xs:int" minOccurs="0" />
+              <xs:element name="prod_qty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnprod_qty" msprop:Generator_ColumnPropNameInRow="prod_qty" msprop:Generator_ColumnPropNameInTable="prod_qtyColumn" msprop:Generator_UserColumnName="prod_qty" type="xs:int" minOccurs="0" />
+              <xs:element name="sal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsal" msprop:Generator_ColumnPropNameInRow="sal" msprop:Generator_ColumnPropNameInTable="salColumn" msprop:Generator_UserColumnName="sal" type="xs:int" minOccurs="0" />
+              <xs:element name="rat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnrat" msprop:Generator_ColumnPropNameInRow="rat" msprop:Generator_ColumnPropNameInTable="ratColumn" msprop:Generator_UserColumnName="rat" type="xs:double" minOccurs="0" />
+              <xs:element name="Unit_title" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUnit_title" msprop:Generator_ColumnPropNameInRow="Unit_title" msprop:Generator_ColumnPropNameInTable="Unit_titleColumn" msprop:Generator_UserColumnName="Unit_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bf" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnbf" msprop:Generator_ColumnPropNameInRow="bf" msprop:Generator_ColumnPropNameInTable="bfColumn" msprop:Generator_UserColumnName="bf" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WithS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWithS" msprop:Generator_ColumnPropNameInRow="WithS" msprop:Generator_ColumnPropNameInTable="WithSColumn" msprop:Generator_UserColumnName="WithS" type="xs:int" minOccurs="0" />
+              <xs:element name="Prod_name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Salesman_DS" msprop:Generator_TableClassName="Salesman_DSDataTable" msprop:Generator_TableVarName="tableSalesman_DS" msprop:Generator_TablePropName="Salesman_DS" msprop:Generator_RowDeletingName="Salesman_DSRowDeleting" msprop:Generator_RowChangingName="Salesman_DSRowChanging" msprop:Generator_RowEvHandlerName="Salesman_DSRowChangeEventHandler" msprop:Generator_RowDeletedName="Salesman_DSRowDeleted" msprop:Generator_UserTableName="Salesman_DS" msprop:Generator_RowChangedName="Salesman_DSRowChanged" msprop:Generator_RowEvArgName="Salesman_DSRowChangeEvent" msprop:Generator_RowClassName="Salesman_DSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sale_date" msprop:Generator_ColumnVarNameInTable="columnSale_date" msprop:Generator_ColumnPropNameInRow="Sale_date" msprop:Generator_ColumnPropNameInTable="Sale_dateColumn" msprop:Generator_UserColumnName="Sale_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sale_bill_no" msprop:Generator_ColumnVarNameInTable="columnSale_bill_no" msprop:Generator_ColumnPropNameInRow="Sale_bill_no" msprop:Generator_ColumnPropNameInTable="Sale_bill_noColumn" msprop:Generator_UserColumnName="Sale_bill_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactAddress" msprop:Generator_ColumnVarNameInTable="columnContactAddress" msprop:Generator_ColumnPropNameInRow="ContactAddress" msprop:Generator_ColumnPropNameInTable="ContactAddressColumn" msprop:Generator_UserColumnName="ContactAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Salesman" msprop:Generator_ColumnVarNameInTable="columnSalesman" msprop:Generator_ColumnPropNameInRow="Salesman" msprop:Generator_ColumnPropNameInTable="SalesmanColumn" msprop:Generator_UserColumnName="Salesman">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPDisct" msprop:Generator_ColumnVarNameInTable="columnSPDisct" msprop:Generator_ColumnPropNameInRow="SPDisct" msprop:Generator_ColumnPropNameInTable="SPDisctColumn" msprop:Generator_UserColumnName="SPDisct" type="xs:int" minOccurs="0" />
+              <xs:element name="S" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:double" minOccurs="0" />
+              <xs:element name="SR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSR" msprop:Generator_ColumnPropNameInRow="SR" msprop:Generator_ColumnPropNameInTable="SRColumn" msprop:Generator_UserColumnName="SR" type="xs:double" minOccurs="0" />
+              <xs:element name="Disct" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisct" msprop:Generator_ColumnPropNameInRow="Disct" msprop:Generator_ColumnPropNameInTable="DisctColumn" msprop:Generator_UserColumnName="Disct" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SchemeDS" msprop:Generator_TableClassName="SchemeDSDataTable" msprop:Generator_TableVarName="tableSchemeDS" msprop:Generator_TablePropName="SchemeDS" msprop:Generator_RowDeletingName="SchemeDSRowDeleting" msprop:Generator_RowChangingName="SchemeDSRowChanging" msprop:Generator_RowEvHandlerName="SchemeDSRowChangeEventHandler" msprop:Generator_RowDeletedName="SchemeDSRowDeleted" msprop:Generator_UserTableName="SchemeDS" msprop:Generator_RowChangedName="SchemeDSRowChanged" msprop:Generator_RowEvArgName="SchemeDSRowChangeEvent" msprop:Generator_RowClassName="SchemeDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sale_date" msprop:Generator_ColumnVarNameInTable="columnSale_date" msprop:Generator_ColumnPropNameInRow="Sale_date" msprop:Generator_ColumnPropNameInTable="Sale_dateColumn" msprop:Generator_UserColumnName="Sale_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sale_bill_no" msprop:Generator_ColumnVarNameInTable="columnSale_bill_no" msprop:Generator_ColumnPropNameInRow="Sale_bill_no" msprop:Generator_ColumnPropNameInTable="Sale_bill_noColumn" msprop:Generator_UserColumnName="Sale_bill_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactAddress" msprop:Generator_ColumnVarNameInTable="columnContactAddress" msprop:Generator_ColumnPropNameInRow="ContactAddress" msprop:Generator_ColumnPropNameInTable="ContactAddressColumn" msprop:Generator_UserColumnName="ContactAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:double" minOccurs="0" />
+              <xs:element name="Bns" msprop:Generator_ColumnVarNameInTable="columnBns" msprop:Generator_ColumnPropNameInRow="Bns" msprop:Generator_ColumnPropNameInTable="BnsColumn" msprop:Generator_UserColumnName="Bns" type="xs:int" minOccurs="0" />
+              <xs:element name="SPDisct" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSPDisct" msprop:Generator_ColumnPropNameInRow="SPDisct" msprop:Generator_ColumnPropNameInTable="SPDisctColumn" msprop:Generator_UserColumnName="SPDisct" type="xs:int" minOccurs="0" />
+              <xs:element name="Disct" msprop:Generator_ColumnVarNameInTable="columnDisct" msprop:Generator_ColumnPropNameInRow="Disct" msprop:Generator_ColumnPropNameInTable="DisctColumn" msprop:Generator_UserColumnName="Disct" type="xs:int" minOccurs="0" />
+              <xs:element name="DisA" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisA" msprop:Generator_ColumnPropNameInRow="DisA" msprop:Generator_ColumnPropNameInTable="DisAColumn" msprop:Generator_UserColumnName="DisA" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesWiseDS" msprop:Generator_TableClassName="SalesWiseDSDataTable" msprop:Generator_TableVarName="tableSalesWiseDS" msprop:Generator_TablePropName="SalesWiseDS" msprop:Generator_RowDeletingName="SalesWiseDSRowDeleting" msprop:Generator_RowChangingName="SalesWiseDSRowChanging" msprop:Generator_RowEvHandlerName="SalesWiseDSRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesWiseDSRowDeleted" msprop:Generator_UserTableName="SalesWiseDS" msprop:Generator_RowChangedName="SalesWiseDSRowChanged" msprop:Generator_RowEvArgName="SalesWiseDSRowChangeEvent" msprop:Generator_RowClassName="SalesWiseDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sale_date" msprop:Generator_ColumnVarNameInTable="columnSale_date" msprop:Generator_ColumnPropNameInRow="Sale_date" msprop:Generator_ColumnPropNameInTable="Sale_dateColumn" msprop:Generator_UserColumnName="Sale_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBNo" msprop:Generator_ColumnPropNameInRow="BNo" msprop:Generator_ColumnPropNameInTable="BNoColumn" msprop:Generator_UserColumnName="BNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactAddress" msprop:Generator_ColumnVarNameInTable="columnContactAddress" msprop:Generator_ColumnPropNameInRow="ContactAddress" msprop:Generator_ColumnPropNameInTable="ContactAddressColumn" msprop:Generator_UserColumnName="ContactAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:int" minOccurs="0" />
+              <xs:element name="Disct" msprop:Generator_ColumnVarNameInTable="columnDisct" msprop:Generator_ColumnPropNameInRow="Disct" msprop:Generator_ColumnPropNameInTable="DisctColumn" msprop:Generator_UserColumnName="Disct" type="xs:int" minOccurs="0" />
+              <xs:element name="Bns" msprop:Generator_ColumnVarNameInTable="columnBns" msprop:Generator_ColumnPropNameInRow="Bns" msprop:Generator_ColumnPropNameInTable="BnsColumn" msprop:Generator_UserColumnName="Bns" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PurchaseWiseDS" msprop:Generator_TableClassName="PurchaseWiseDSDataTable" msprop:Generator_TableVarName="tablePurchaseWiseDS" msprop:Generator_TablePropName="PurchaseWiseDS" msprop:Generator_RowDeletingName="PurchaseWiseDSRowDeleting" msprop:Generator_RowChangingName="PurchaseWiseDSRowChanging" msprop:Generator_RowEvHandlerName="PurchaseWiseDSRowChangeEventHandler" msprop:Generator_RowDeletedName="PurchaseWiseDSRowDeleted" msprop:Generator_UserTableName="PurchaseWiseDS" msprop:Generator_RowChangedName="PurchaseWiseDSRowChanged" msprop:Generator_RowEvArgName="PurchaseWiseDSRowChangeEvent" msprop:Generator_RowClassName="PurchaseWiseDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Purch_date" msprop:Generator_ColumnVarNameInTable="columnPurch_date" msprop:Generator_ColumnPropNameInRow="Purch_date" msprop:Generator_ColumnPropNameInTable="Purch_dateColumn" msprop:Generator_UserColumnName="Purch_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBNo" msprop:Generator_ColumnPropNameInRow="BNo" msprop:Generator_ColumnPropNameInTable="BNoColumn" msprop:Generator_UserColumnName="BNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactAddress" msprop:Generator_ColumnVarNameInTable="columnContactAddress" msprop:Generator_ColumnPropNameInRow="ContactAddress" msprop:Generator_ColumnPropNameInTable="ContactAddressColumn" msprop:Generator_UserColumnName="ContactAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:int" minOccurs="0" />
+              <xs:element name="Disct" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisct" msprop:Generator_ColumnPropNameInRow="Disct" msprop:Generator_ColumnPropNameInTable="DisctColumn" msprop:Generator_UserColumnName="Disct" type="xs:int" minOccurs="0" />
+              <xs:element name="Bns" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBns" msprop:Generator_ColumnPropNameInRow="Bns" msprop:Generator_ColumnPropNameInTable="BnsColumn" msprop:Generator_UserColumnName="Bns" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

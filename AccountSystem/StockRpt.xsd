@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockRpt" targetNamespace="http://tempuri.org/StockRpt.xsd" xmlns:mstns="http://tempuri.org/StockRpt.xsd" xmlns="http://tempuri.org/StockRpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AccountSystem.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Product_2.Prod_name, Open_Stock.Opening, Curr_Stock.P, Curr_Stock.PR, Curr_Stock.S, Curr_Stock.SR, ISNULL(Open_Stock.Opening, 0) + ISNULL(Curr_Stock.P,
+                         0) - ISNULL(Curr_Stock.PR, 0) - ISNULL(Curr_Stock.S, 0) + ISNULL(Curr_Stock.SR, 0) AS STOCK, Av_Rate.P_Rate, tbl_Unit.Unit_title, tbl_Product_2.DngrLevel
+FROM            (SELECT        tbl_Purchase_Detail_2.Prod_id, SUM(tbl_Purchase_Detail_2.Prod_rate * tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no, 1))
+                                                    / SUM(tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no, 1)) AS P_Rate
+                          FROM            tbl_Purchase AS tbl_Purchase_2 INNER JOIN
+                                                    tbl_Purchase_Detail AS tbl_Purchase_Detail_2 ON tbl_Purchase_2.Purch_id = tbl_Purchase_Detail_2.Purch_id LEFT OUTER JOIN
+                                                    tbl_Paking AS tbl_Paking_3 ON tbl_Purchase_Detail_2.Pakg_id = tbl_Paking_3.Pakg_id
+                          WHERE        (tbl_Purchase_2.Purch_date &lt;= CONVERT(DATETIME, @D2, 102)) AND (tbl_Purchase_2.CompID = @CId)
+                          GROUP BY tbl_Purchase_Detail_2.Prod_id) AS Av_Rate INNER JOIN
+                         tbl_Product AS tbl_Product_2 ON Av_Rate.Prod_id = tbl_Product_2.Prod_id INNER JOIN
+                         tbl_Unit ON tbl_Product_2.Unit_id = tbl_Unit.Unit_id LEFT OUTER JOIN
+                             (SELECT        V_P.P, V_PR.PR, V_S.S, V_SR.SR, tbl_Product.Prod_id, tbl_Product.Prod_name
+                               FROM            (SELECT        SUM(ISNULL(tbl_Sale_Return_Detail.Prod_qty, 0)) AS SR, tbl_Sale_Return_Detail.Prod_id
+                                                         FROM            tbl_Sale_return INNER JOIN
+                                                                                   tbl_Sale_Return_Detail ON tbl_Sale_return.Sale_retn_id = tbl_Sale_Return_Detail.Sale_retn_id
+                                                         WHERE        (tbl_Sale_return.Purch_retn_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102))
+                                                         GROUP BY tbl_Sale_Return_Detail.Prod_id) AS V_SR RIGHT OUTER JOIN
+                                                         tbl_Product ON V_SR.Prod_id = tbl_Product.Prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_SaleDetail.prod_qty, 0)) AS S, tbl_SaleDetail.prod_id
+                                                               FROM            tbl_Sale INNER JOIN
+                                                                                         tbl_SaleDetail ON tbl_Sale.Sale_id = tbl_SaleDetail.Sale_id
+                                                               WHERE        (tbl_Sale.Sale_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102))
+                                                               GROUP BY tbl_SaleDetail.prod_id) AS V_S ON tbl_Product.Prod_id = V_S.prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_Purchase_Return_Detail.Prod_qty, 0) * ISNULL(tbl_Paking.Pakg_no, 1)) AS PR,
+                                                                                         tbl_Purchase_Return_Detail.Prod_id
+                                                               FROM            tbl_Paking RIGHT OUTER JOIN
+                                                                                         tbl_Purchase_Return INNER JOIN
+                                                                                         tbl_Purchase_Return_Detail ON tbl_Purchase_Return.Purch_retn_id = tbl_Purchase_Return_Detail.Purch_retn_id ON
+                                                                                         tbl_Paking.Pakg_id = tbl_Purchase_Return_Detail.Pakg_id
+                                                               WHERE        (tbl_Purchase_Return.Purch_retn_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102))
+                                                               GROUP BY tbl_Purchase_Return_Detail.Prod_id) AS V_PR ON tbl_Product.Prod_id = V_PR.Prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_Purchase_Detail.Prod_qty, 0) * ISNULL(tbl_Paking_1.Pakg_no, 1)) AS P, tbl_Purchase_Detail.Prod_id
+                                                               FROM            tbl_Purchase INNER JOIN
+                                                                                         tbl_Purchase_Detail ON tbl_Purchase.Purch_id = tbl_Purchase_Detail.Purch_id LEFT OUTER JOIN
+                                                                                         tbl_Paking AS tbl_Paking_1 ON tbl_Purchase_Detail.Pakg_id = tbl_Paking_1.Pakg_id
+                                                               WHERE        (tbl_Purchase.Purch_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102))
+                                                               GROUP BY tbl_Purchase_Detail.Prod_id) AS V_P ON tbl_Product.Prod_id = V_P.Prod_id) AS Curr_Stock ON
+                         tbl_Product_2.Prod_id = Curr_Stock.Prod_id LEFT OUTER JOIN
+                             (SELECT        ISNULL(V_P_1.P, 0) - ISNULL(V_PR_1.PR, 0) - ISNULL(V_S_1.S, 0) + ISNULL(V_SR_1.SR, 0) AS Opening, tbl_Product_1.Prod_id,
+                                                         tbl_Product_1.Prod_name
+                               FROM            (SELECT        SUM(ISNULL(tbl_Sale_Return_Detail_1.Prod_qty, 0)) AS SR, tbl_Sale_Return_Detail_1.Prod_id
+                                                         FROM            tbl_Sale_return AS tbl_Sale_return_1 INNER JOIN
+                                                                                   tbl_Sale_Return_Detail AS tbl_Sale_Return_Detail_1 ON tbl_Sale_return_1.Sale_retn_id = tbl_Sale_Return_Detail_1.Sale_retn_id
+                                                         WHERE        (tbl_Sale_return_1.Purch_retn_date &lt; CONVERT(DATETIME, @D1, 102))
+                                                         GROUP BY tbl_Sale_Return_Detail_1.Prod_id) AS V_SR_1 RIGHT OUTER JOIN
+                                                         tbl_Product AS tbl_Product_1 ON V_SR_1.Prod_id = tbl_Product_1.Prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_SaleDetail_1.prod_qty, 0)) AS S, tbl_SaleDetail_1.prod_id
+                                                               FROM            tbl_Sale AS tbl_Sale_1 INNER JOIN
+                                                                                         tbl_SaleDetail AS tbl_SaleDetail_1 ON tbl_Sale_1.Sale_id = tbl_SaleDetail_1.Sale_id
+                                                               WHERE        (tbl_Sale_1.Sale_date &lt; CONVERT(DATETIME, @D1, 102))
+                                                               GROUP BY tbl_SaleDetail_1.prod_id) AS V_S_1 ON tbl_Product_1.Prod_id = V_S_1.prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_Purchase_Return_Detail_1.Prod_qty, 0) * ISNULL(tbl_Paking_2.Pakg_no, 1)) AS PR,
+                                                                                         tbl_Purchase_Return_Detail_1.Prod_id
+                                                               FROM            tbl_Paking AS tbl_Paking_2 RIGHT OUTER JOIN
+                                                                                         tbl_Purchase_Return AS tbl_Purchase_Return_1 INNER JOIN
+                                                                                         tbl_Purchase_Return_Detail AS tbl_Purchase_Return_Detail_1 ON
+                                                                                         tbl_Purchase_Return_1.Purch_retn_id = tbl_Purchase_Return_Detail_1.Purch_retn_id ON
+                                                                                         tbl_Paking_2.Pakg_id = tbl_Purchase_Return_Detail_1.Pakg_id
+                                                               WHERE        (tbl_Purchase_Return_1.Purch_retn_date &lt; CONVERT(DATETIME, @D1, 102))
+                                                               GROUP BY tbl_Purchase_Return_Detail_1.Prod_id) AS V_PR_1 ON tbl_Product_1.Prod_id = V_PR_1.Prod_id LEFT OUTER JOIN
+                                                             (SELECT        SUM(ISNULL(tbl_Purchase_Detail_1.Prod_qty, 0) * ISNULL(tbl_Paking_1.Pakg_no, 1)) AS P, tbl_Purchase_Detail_1.Prod_id
+                                                               FROM            tbl_Purchase AS tbl_Purchase_1 INNER JOIN
+                                                                                         tbl_Purchase_Detail AS tbl_Purchase_Detail_1 ON tbl_Purchase_1.Purch_id = tbl_Purchase_Detail_1.Purch_id LEFT OUTER JOIN
+                                                                                         tbl_Paking AS tbl_Paking_1 ON tbl_Purchase_Detail_1.Pakg_id = tbl_Paking_1.Pakg_id
+                                                               WHERE        (tbl_Purchase_1.Purch_date &lt; CONVERT(DATETIME, @D1, 102))
+                                                               GROUP BY tbl_Purchase_Detail_1.Prod_id) AS V_P_1 ON tbl_Product_1.Prod_id = V_P_1.Prod_id) AS Open_Stock ON
+                         tbl_Product_2.Prod_id = Open_Stock.Prod_id
+WHERE        (tbl_Product_2.CompID = @CId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="CId" ColumnName="CompID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CompID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@D2" Precision="0" Scale="0" Size="8" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@D1" Precision="0" Scale="0" Size="8" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="Opening" DataSetColumn="Opening" />
+              <Mapping SourceColumn="P" DataSetColumn="P" />
+              <Mapping SourceColumn="PR" DataSetColumn="PR" />
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="SR" DataSetColumn="SR" />
+              <Mapping SourceColumn="STOCK" DataSetColumn="STOCK" />
+              <Mapping SourceColumn="P_Rate" DataSetColumn="P_Rate" />
+              <Mapping SourceColumn="Unit_title" DataSetColumn="Unit_title" />
+              <Mapping SourceColumn="DngrLevel" DataSetColumn="DngrLevel" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="BaadshahTires.dbo.tbl_Product" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Account.ContactName, SUM(tbl_SaleDetail.prod_qty) AS qty, tbl_Product.Prod_name, SUM(tbl_SaleDetail.Bns) AS bons
+FROM            tbl_SaleDetail INNER JOIN
+                         tbl_Sale ON tbl_SaleDetail.Sale_id = tbl_Sale.Sale_id INNER JOIN
+                         tbl_Account ON tbl_Sale.Salesman = tbl_Account.Contact_id INNER JOIN
+                         tbl_Product ON tbl_SaleDetail.prod_id = tbl_Product.Prod_id
+WHERE        (tbl_Account.Contact_id = @Salesman) AND (tbl_Sale.Sale_date BETWEEN @d1 AND @d2)
+GROUP BY tbl_Account.ContactName, tbl_Product.Prod_name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Salesman" ColumnName="Contact_id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Salesman" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Contact_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d1" ColumnName="Sale_date" DataSourceName="" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@d1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="d2" ColumnName="Sale_date" DataSourceName="" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@d2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Sale_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="bons" DataSetColumn="bons" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_StockReport2TableAdapter" GeneratorDataComponentClassName="sp_StockReport2TableAdapter" Name="sp_StockReport2" UserDataComponentName="sp_StockReport2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="NLC_DB2.dbo.sp_StockReport2" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_StockReport2</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@D2" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@StoreID" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="S" DataSetColumn="S" />
+              <Mapping SourceColumn="SR" DataSetColumn="SR" />
+              <Mapping SourceColumn="STIN" DataSetColumn="STIN" />
+              <Mapping SourceColumn="STOUT" DataSetColumn="STOUT" />
+              <Mapping SourceColumn="Prod_id" DataSetColumn="Prod_id" />
+              <Mapping SourceColumn="STVALUE" DataSetColumn="STVALUE" />
+              <Mapping SourceColumn="Prod_name" DataSetColumn="Prod_name" />
+              <Mapping SourceColumn="DngrLevel" DataSetColumn="DngrLevel" />
+              <Mapping SourceColumn="BF" DataSetColumn="BF" />
+              <Mapping SourceColumn="P" DataSetColumn="P" />
+              <Mapping SourceColumn="PR" DataSetColumn="PR" />
+              <Mapping SourceColumn="production" DataSetColumn="production" />
+              <Mapping SourceColumn="Brand_name" DataSetColumn="Brand_name" />
+              <Mapping SourceColumn="Consumed" DataSetColumn="Consumed" />
+              <Mapping SourceColumn="Damage" DataSetColumn="Damage" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockRpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockRpt" msprop:Generator_UserDSName="StockRpt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Prod_name" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Opening" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOpening" msprop:Generator_ColumnPropNameInRow="Opening" msprop:Generator_ColumnPropNameInTable="OpeningColumn" msprop:Generator_UserColumnName="Opening" type="xs:double" minOccurs="0" />
+              <xs:element name="P" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnP" msprop:Generator_ColumnPropNameInRow="P" msprop:Generator_ColumnPropNameInTable="PColumn" msprop:Generator_UserColumnName="P" type="xs:double" minOccurs="0" />
+              <xs:element name="PR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPR" msprop:Generator_ColumnPropNameInRow="PR" msprop:Generator_ColumnPropNameInTable="PRColumn" msprop:Generator_UserColumnName="PR" type="xs:double" minOccurs="0" />
+              <xs:element name="S" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:int" minOccurs="0" />
+              <xs:element name="SR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSR" msprop:Generator_ColumnPropNameInRow="SR" msprop:Generator_ColumnPropNameInTable="SRColumn" msprop:Generator_UserColumnName="SR" type="xs:int" minOccurs="0" />
+              <xs:element name="STOCK" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSTOCK" msprop:Generator_ColumnPropNameInRow="STOCK" msprop:Generator_ColumnPropNameInTable="STOCKColumn" msprop:Generator_UserColumnName="STOCK" type="xs:double" minOccurs="0" />
+              <xs:element name="P_Rate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnP_Rate" msprop:Generator_ColumnPropNameInRow="P_Rate" msprop:Generator_ColumnPropNameInTable="P_RateColumn" msprop:Generator_UserColumnName="P_Rate" type="xs:double" minOccurs="0" />
+              <xs:element name="Unit_title" msprop:Generator_ColumnVarNameInTable="columnUnit_title" msprop:Generator_ColumnPropNameInRow="Unit_title" msprop:Generator_ColumnPropNameInTable="Unit_titleColumn" msprop:Generator_UserColumnName="Unit_title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DngrLevel" msprop:Generator_ColumnVarNameInTable="columnDngrLevel" msprop:Generator_ColumnPropNameInRow="DngrLevel" msprop:Generator_ColumnPropNameInTable="DngrLevelColumn" msprop:Generator_UserColumnName="DngrLevel" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" minOccurs="0" />
+              <xs:element name="Prod_name" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bons" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnbons" msprop:Generator_ColumnPropNameInRow="bons" msprop:Generator_ColumnPropNameInTable="bonsColumn" msprop:Generator_UserColumnName="bons" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_StockReport2" msprop:Generator_TableClassName="sp_StockReport2DataTable" msprop:Generator_TableVarName="tablesp_StockReport2" msprop:Generator_RowChangedName="sp_StockReport2RowChanged" msprop:Generator_TablePropName="sp_StockReport2" msprop:Generator_RowDeletingName="sp_StockReport2RowDeleting" msprop:Generator_RowChangingName="sp_StockReport2RowChanging" msprop:Generator_RowEvHandlerName="sp_StockReport2RowChangeEventHandler" msprop:Generator_RowDeletedName="sp_StockReport2RowDeleted" msprop:Generator_RowClassName="sp_StockReport2Row" msprop:Generator_UserTableName="sp_StockReport2" msprop:Generator_RowEvArgName="sp_StockReport2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnS" msprop:Generator_ColumnPropNameInRow="S" msprop:Generator_ColumnPropNameInTable="SColumn" msprop:Generator_UserColumnName="S" type="xs:int" minOccurs="0" />
+              <xs:element name="SR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSR" msprop:Generator_ColumnPropNameInRow="SR" msprop:Generator_ColumnPropNameInTable="SRColumn" msprop:Generator_UserColumnName="SR" type="xs:int" minOccurs="0" />
+              <xs:element name="STIN" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSTIN" msprop:Generator_ColumnPropNameInRow="STIN" msprop:Generator_ColumnPropNameInTable="STINColumn" msprop:Generator_UserColumnName="STIN" type="xs:int" minOccurs="0" />
+              <xs:element name="STOUT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSTOUT" msprop:Generator_ColumnPropNameInRow="STOUT" msprop:Generator_ColumnPropNameInTable="STOUTColumn" msprop:Generator_UserColumnName="STOUT" type="xs:int" minOccurs="0" />
+              <xs:element name="Prod_id" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProd_id" msprop:Generator_ColumnPropNameInRow="Prod_id" msprop:Generator_ColumnPropNameInTable="Prod_idColumn" msprop:Generator_UserColumnName="Prod_id" type="xs:int" minOccurs="0" />
+              <xs:element name="STVALUE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSTVALUE" msprop:Generator_ColumnPropNameInRow="STVALUE" msprop:Generator_ColumnPropNameInTable="STVALUEColumn" msprop:Generator_UserColumnName="STVALUE" type="xs:double" minOccurs="0" />
+              <xs:element name="Prod_name" msprop:Generator_ColumnVarNameInTable="columnProd_name" msprop:Generator_ColumnPropNameInRow="Prod_name" msprop:Generator_ColumnPropNameInTable="Prod_nameColumn" msprop:Generator_UserColumnName="Prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DngrLevel" msprop:Generator_ColumnVarNameInTable="columnDngrLevel" msprop:Generator_ColumnPropNameInRow="DngrLevel" msprop:Generator_ColumnPropNameInTable="DngrLevelColumn" msprop:Generator_UserColumnName="DngrLevel" type="xs:int" minOccurs="0" />
+              <xs:element name="BF" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBF" msprop:Generator_ColumnPropNameInRow="BF" msprop:Generator_ColumnPropNameInTable="BFColumn" msprop:Generator_UserColumnName="BF" type="xs:double" minOccurs="0" />
+              <xs:element name="P" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnP" msprop:Generator_ColumnPropNameInRow="P" msprop:Generator_ColumnPropNameInTable="PColumn" msprop:Generator_UserColumnName="P" type="xs:double" minOccurs="0" />
+              <xs:element name="PR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPR" msprop:Generator_ColumnPropNameInRow="PR" msprop:Generator_ColumnPropNameInTable="PRColumn" msprop:Generator_UserColumnName="PR" type="xs:double" minOccurs="0" />
+              <xs:element name="production" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnproduction" msprop:Generator_ColumnPropNameInRow="production" msprop:Generator_ColumnPropNameInTable="productionColumn" msprop:Generator_UserColumnName="production" type="xs:double" minOccurs="0" />
+              <xs:element name="Brand_name" msprop:Generator_ColumnVarNameInTable="columnBrand_name" msprop:Generator_ColumnPropNameInRow="Brand_name" msprop:Generator_ColumnPropNameInTable="Brand_nameColumn" msprop:Generator_UserColumnName="Brand_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Consumed" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsumed" msprop:Generator_ColumnPropNameInRow="Consumed" msprop:Generator_ColumnPropNameInTable="ConsumedColumn" msprop:Generator_UserColumnName="Consumed" type="xs:double" minOccurs="0" />
+              <xs:element name="Damage" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDamage" msprop:Generator_ColumnPropNameInRow="Damage" msprop:Generator_ColumnPropNameInTable="DamageColumn" msprop:Generator_UserColumnName="Damage" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IncomStat" targetNamespace="http://tempuri.org/IncomStat.xsd" xmlns:mstns="http://tempuri.org/IncomStat.xsd" xmlns="http://tempuri.org/IncomStat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AccountSystem.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TblAccHeadTableAdapter" GeneratorDataComponentClassName="TblAccHeadTableAdapter" Name="TblAccHead" UserDataComponentName="TblAccHeadTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="BaadshahTires.dbo.TblAccHead" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        RIGHT('0' + CONVERT(VARCHAR, TblAccHead.AccHeadCode), 200) + '-' + RIGHT('00' + CONVERT(VARCHAR, TblAccSubHead.AccSubCode), 200)
+                         + '-' + RIGHT('000' + CONVERT(VARCHAR, TblAccEntry.EntryAccCode), 200) + '  ' + TblAccEntry.EntryAccName AS AccCode, SUM(VW_VoucherDTL.AmountDeb)
+                         AS Debit, SUM(VW_VoucherDTL.AmountCre) AS Credit, CASE WHEN SUM(VW_VoucherDTL.AmountDeb) - SUM(VW_VoucherDTL.AmountCre)
+                         &lt;= (SUM(VW_VoucherDTL.AmountDeb) - SUM(VW_VoucherDTL.AmountCre)) * - 1 THEN 0 ELSE SUM(VW_VoucherDTL.AmountDeb)
+                         - SUM(VW_VoucherDTL.AmountCre) END AS Balac, TblAccHead.AccHeadName
+FROM            TblCompany INNER JOIN
+                         TblAccHead ON TblCompany.CompanyID = TblAccHead.CompanyID INNER JOIN
+                         TblAccSubHead ON TblAccHead.AccHeadID = TblAccSubHead.AccHeadID INNER JOIN
+                         TblAccEntry ON TblAccSubHead.AccSubID = TblAccEntry.AccSubID INNER JOIN
+                         VW_VoucherDTL ON TblAccEntry.EntryAccID = VW_VoucherDTL.AccEntryID INNER JOIN
+                         VW_VoucherHDR ON VW_VoucherDTL.VoucherID = VW_VoucherHDR.VoucherID
+WHERE        (TblCompany.CompanyID = @Cid) AND (VW_VoucherHDR.EntryDate BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102)) AND
+                         (TblAccHead.AccType = N'revenue' OR
+                         TblAccHead.AccType = N'expenditure') AND (TblAccEntry.EntryAccID &lt;&gt;
+                             (SELECT        Purchases
+                               FROM            tblMonthCloseing
+                               WHERE        (CompID = @Cid)))
+GROUP BY RIGHT('0' + CONVERT(VARCHAR, TblAccHead.AccHeadCode), 200) + '-' + RIGHT('00' + CONVERT(VARCHAR, TblAccSubHead.AccSubCode), 200)
+                         + '-' + RIGHT('000' + CONVERT(VARCHAR, TblAccEntry.EntryAccCode), 200) + '  ' + TblAccEntry.EntryAccName, TblAccHead.AccHeadName
+HAVING        (SUM(VW_VoucherDTL.AmountDeb - VW_VoucherDTL.AmountCre) &lt;&gt; 0)
+UNION
+SELECT        'Scheme Amount' AS AccCode, SUM(ISNULL(Pur_Rate_2.P_Rate, tbl_Product_2.p_Price) * tbl_SaleDetail_2.Bns) AS Debit, 0 AS Credit,
+                         SUM(ISNULL(Pur_Rate_2.P_Rate, tbl_Product_2.p_Price) * tbl_SaleDetail_2.Bns) AS Balac, 'Scheme &amp; Discounts' AS AccHeadName
+FROM            tbl_SaleDetail AS tbl_SaleDetail_2 INNER JOIN
+                         tbl_Sale AS tbl_Sale_2 ON tbl_SaleDetail_2.Sale_id = tbl_Sale_2.Sale_id INNER JOIN
+                         tbl_Product AS tbl_Product_2 ON tbl_SaleDetail_2.prod_id = tbl_Product_2.Prod_id LEFT OUTER JOIN
+                             (SELECT        tbl_Purchase_Detail_2.Prod_id,
+                                                         CASE WHEN Prod_id = 12 THEN 1.0126 ELSE SUM(tbl_Purchase_Detail_2.Prod_rate * tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no,
+                                                          1)) / NULLIF (SUM(tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no, 1)), 0) END AS P_Rate
+                               FROM            tbl_Purchase AS tbl_Purchase_2 INNER JOIN
+                                                         tbl_Purchase_Detail AS tbl_Purchase_Detail_2 ON tbl_Purchase_2.Purch_id = tbl_Purchase_Detail_2.Purch_id LEFT OUTER JOIN
+                                                         tbl_Paking AS tbl_Paking_3 ON tbl_Purchase_Detail_2.Pakg_id = tbl_Paking_3.Pakg_id
+                               WHERE        (tbl_Purchase_2.Purch_date &lt;= CONVERT(DATETIME, @D2, 102)) AND (tbl_Purchase_2.CompID = @CId)
+                               GROUP BY tbl_Purchase_Detail_2.Prod_id) AS Pur_Rate_2 ON tbl_SaleDetail_2.prod_id = Pur_Rate_2.Prod_id
+WHERE        (tbl_Sale_2.Sale_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102)) AND (tbl_Sale_2.CompID = @CId)
+HAVING        (SUM(ISNULL(Pur_Rate_2.P_Rate, tbl_Product_2.p_Price) * tbl_SaleDetail_2.Bns) IS NOT NULL)
+UNION
+SELECT        'Cost of Goods Sold' AS AccCode, SUM(ISNULL(Pur_Rate_1.P_Rate, tbl_Product_1.p_Price) * tbl_SaleDetail_1.prod_qty) AS Debit, 0 AS Credit,
+                         SUM(ISNULL(Pur_Rate_1.P_Rate, tbl_Product_1.p_Price) * tbl_SaleDetail_1.prod_qty) AS Balac, 'Inventory Purchases' AS AccHeadName
+FROM            tbl_SaleDetail AS tbl_SaleDetail_1 INNER JOIN
+                         tbl_Sale AS tbl_Sale_1 ON tbl_SaleDetail_1.Sale_id = tbl_Sale_1.Sale_id INNER JOIN
+                         tbl_Product AS tbl_Product_1 ON tbl_SaleDetail_1.prod_id = tbl_Product_1.Prod_id LEFT OUTER JOIN
+                             (SELECT        tbl_Purchase_Detail_2.Prod_id,
+                                                         CASE WHEN Prod_id = 12 THEN 1.0126 ELSE SUM(tbl_Purchase_Detail_2.Prod_rate * tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no,
+                                                          1)) / NULLIF (SUM(tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no, 1)), 0) END AS P_Rate
+                               FROM            tbl_Purchase AS tbl_Purchase_2 INNER JOIN
+                                                         tbl_Purchase_Detail AS tbl_Purchase_Detail_2 ON tbl_Purchase_2.Purch_id = tbl_Purchase_Detail_2.Purch_id LEFT OUTER JOIN
+                                                         tbl_Paking AS tbl_Paking_3 ON tbl_Purchase_Detail_2.Pakg_id = tbl_Paking_3.Pakg_id
+                               WHERE        (tbl_Purchase_2.Purch_date &lt;= CONVERT(DATETIME, @D2, 102)) AND (tbl_Purchase_2.CompID = @CId)
+                               GROUP BY tbl_Purchase_Detail_2.Prod_id) AS Pur_Rate_1 ON tbl_SaleDetail_1.prod_id = Pur_Rate_1.Prod_id
+WHERE        (tbl_Sale_1.Sale_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102)) AND (tbl_Sale_1.CompID = @CId)
+HAVING        (SUM(ISNULL(Pur_Rate_1.P_Rate, tbl_Product_1.p_Price) * tbl_SaleDetail_1.prod_qty) IS NOT NULL)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Cid" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Cid" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@D1" Precision="0" Scale="0" Size="8" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@D2" Precision="0" Scale="0" Size="8" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccCode" DataSetColumn="AccCode" />
+              <Mapping SourceColumn="Debit" DataSetColumn="Debit" />
+              <Mapping SourceColumn="Credit" DataSetColumn="Credit" />
+              <Mapping SourceColumn="AccHeadName" DataSetColumn="AccHeadName" />
+              <Mapping SourceColumn="Balac" DataSetColumn="Balac" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TblAccHead1TableAdapter" GeneratorDataComponentClassName="TblAccHead1TableAdapter" Name="TblAccHead1" UserDataComponentName="TblAccHead1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="test.dbo.TblAccHead" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        RIGHT('0' + CONVERT(VARCHAR, TblAccHead.AccHeadCode), 200) + '-' + RIGHT('00' + CONVERT(VARCHAR, TblAccSubHead.AccSubCode), 200)
+                         + '-' + RIGHT('000' + CONVERT(VARCHAR, TblAccEntry.EntryAccCode), 200) + '  ' + TblAccEntry.EntryAccName AS AccCode, SUM(TblVoucherDTL.AmountDeb) AS Debit,
+                         SUM(TblVoucherDTL.AmountCre) AS Credit, CASE WHEN SUM(TblVoucherDTL.AmountDeb) - SUM(TblVoucherDTL.AmountCre) &lt;= (SUM(TblVoucherDTL.AmountDeb)
+                         - SUM(TblVoucherDTL.AmountCre)) * - 1 THEN 0 ELSE SUM(TblVoucherDTL.AmountDeb) - SUM(TblVoucherDTL.AmountCre) END AS Balac,
+                         TblAccHead.AccHeadName
+FROM            TblCompany INNER JOIN
+                         TblAccHead ON TblCompany.CompanyID = TblAccHead.CompanyID INNER JOIN
+                         TblAccSubHead ON TblAccHead.AccHeadID = TblAccSubHead.AccHeadID INNER JOIN
+                         TblAccEntry ON TblAccSubHead.AccSubID = TblAccEntry.AccSubID INNER JOIN
+                         TblVoucherDTL ON TblAccEntry.EntryAccID = TblVoucherDTL.AccEntryID INNER JOIN
+                         TblVoucherHDR ON TblVoucherDTL.VoucherID = TblVoucherHDR.VoucherID
+WHERE        (TblCompany.CompanyID = @Cid) AND (TblVoucherHDR.EntryDate BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102)) AND
+                         (TblAccHead.AccType = N'revenue' OR
+                         TblAccHead.AccType = N'expenditure') AND (TblAccEntry.EntryAccID &lt;&gt;
+                             (SELECT        Purchases
+                               FROM            tblMonthCloseing
+                               WHERE        (CompID = @Cid)))
+GROUP BY RIGHT('0' + CONVERT(VARCHAR, TblAccHead.AccHeadCode), 200) + '-' + RIGHT('00' + CONVERT(VARCHAR, TblAccSubHead.AccSubCode), 200)
+                         + '-' + RIGHT('000' + CONVERT(VARCHAR, TblAccEntry.EntryAccCode), 200) + '  ' + TblAccEntry.EntryAccName, TblAccHead.AccHeadName
+HAVING        (SUM(TblVoucherDTL.AmountDeb - TblVoucherDTL.AmountCre) &lt;&gt; 0)
+UNION
+SELECT        'Cost of Goods Sold' AS AccCode, SUM(CASE WHEN tbl_SaleDetail.Prod_id = 12 THEN (tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate)
+                         - ((tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) * 0.0126) ELSE ISNULL(Pur_Rate.P_Rate, tbl_Product.P_Price) * tbl_SaleDetail.prod_qty END) AS Debit,
+                         0 AS Credit, SUM(CASE WHEN tbl_SaleDetail.Prod_id = 12 THEN (tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate)
+                         - ((tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) * 0.0126) ELSE ISNULL(Pur_Rate.P_Rate, tbl_Product.P_Price) * tbl_SaleDetail.prod_qty END) AS Balac,
+                         'Inventory Purchases' AS AccHeadName
+FROM            tbl_SaleDetail INNER JOIN
+                         tbl_Sale ON tbl_SaleDetail.Sale_id = tbl_Sale.Sale_id INNER JOIN
+                         tbl_Product ON tbl_SaleDetail.prod_id = tbl_Product.Prod_id LEFT OUTER JOIN
+                             (SELECT        tbl_Purchase_Detail_2.Prod_id,
+                                                         CASE WHEN Prod_id = 12 THEN 1.0126 ELSE SUM(tbl_Purchase_Detail_2.Prod_rate * tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no,
+                                                          1)) / SUM(tbl_Purchase_Detail_2.Prod_qty * ISNULL(tbl_Paking_3.Pakg_no, 1)) END AS P_Rate
+                               FROM            tbl_Purchase AS tbl_Purchase_2 INNER JOIN
+                                                         tbl_Purchase_Detail AS tbl_Purchase_Detail_2 ON tbl_Purchase_2.Purch_id = tbl_Purchase_Detail_2.Purch_id LEFT OUTER JOIN
+                                                         tbl_Paking AS tbl_Paking_3 ON tbl_Purchase_Detail_2.Pakg_id = tbl_Paking_3.Pakg_id
+                               WHERE        (tbl_Purchase_2.Purch_date &lt;= CONVERT(DATETIME, @D2, 102)) AND (tbl_Purchase_2.CompID = @CId)
+                               GROUP BY tbl_Purchase_Detail_2.Prod_id) AS Pur_Rate ON tbl_SaleDetail.prod_id = Pur_Rate.Prod_id
+WHERE        (tbl_Sale.Sale_date BETWEEN CONVERT(DATETIME, @D1, 102) AND CONVERT(DATETIME, @D2, 102)) AND (tbl_Sale.CompID = @CId)
+HAVING        (SUM(CASE WHEN tbl_SaleDetail.Prod_id = 12 THEN (tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate) - ((tbl_SaleDetail.prod_qty * tbl_SaleDetail.Prod_rate)
+                         * 0.0126) ELSE ISNULL(Pur_Rate.P_Rate, tbl_Product.P_Price) * tbl_SaleDetail.prod_qty END) IS NOT NULL)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Cid" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Cid" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D1" ColumnName="" DataSourceName="" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@D1" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="D2" ColumnName="" DataSourceName="" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@D2" Precision="0" ProviderType="DateTime" Scale="0" Size="3" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccCode" DataSetColumn="AccCode" />
+              <Mapping SourceColumn="Debit" DataSetColumn="Debit" />
+              <Mapping SourceColumn="Credit" DataSetColumn="Credit" />
+              <Mapping SourceColumn="AccHeadName" DataSetColumn="AccHeadName" />
+              <Mapping SourceColumn="Balac" DataSetColumn="Balac" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IncomStat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="IncomStat" msprop:Generator_UserDSName="IncomStat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblAccHead" msprop:Generator_TableClassName="TblAccHeadDataTable" msprop:Generator_TableVarName="tableTblAccHead" msprop:Generator_TablePropName="TblAccHead" msprop:Generator_RowDeletingName="TblAccHeadRowDeleting" msprop:Generator_RowChangingName="TblAccHeadRowChanging" msprop:Generator_RowEvHandlerName="TblAccHeadRowChangeEventHandler" msprop:Generator_RowDeletedName="TblAccHeadRowDeleted" msprop:Generator_UserTableName="TblAccHead" msprop:Generator_RowChangedName="TblAccHeadRowChanged" msprop:Generator_RowEvArgName="TblAccHeadRowChangeEvent" msprop:Generator_RowClassName="TblAccHeadRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAccCode" msprop:Generator_ColumnPropNameInRow="AccCode" msprop:Generator_ColumnPropNameInTable="AccCodeColumn" msprop:Generator_UserColumnName="AccCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Debit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDebit" msprop:Generator_ColumnPropNameInRow="Debit" msprop:Generator_ColumnPropNameInTable="DebitColumn" msprop:Generator_UserColumnName="Debit" type="xs:double" minOccurs="0" />
+              <xs:element name="Credit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_UserColumnName="Credit" type="xs:double" minOccurs="0" />
+              <xs:element name="AccHeadName" msprop:Generator_ColumnVarNameInTable="columnAccHeadName" msprop:Generator_ColumnPropNameInRow="AccHeadName" msprop:Generator_ColumnPropNameInTable="AccHeadNameColumn" msprop:Generator_UserColumnName="AccHeadName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Balac" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalac" msprop:Generator_ColumnPropNameInRow="Balac" msprop:Generator_ColumnPropNameInTable="BalacColumn" msprop:Generator_UserColumnName="Balac" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblAccHead1" msprop:Generator_TableClassName="TblAccHead1DataTable" msprop:Generator_TableVarName="tableTblAccHead1" msprop:Generator_RowChangedName="TblAccHead1RowChanged" msprop:Generator_TablePropName="TblAccHead1" msprop:Generator_RowDeletingName="TblAccHead1RowDeleting" msprop:Generator_RowChangingName="TblAccHead1RowChanging" msprop:Generator_RowEvHandlerName="TblAccHead1RowChangeEventHandler" msprop:Generator_RowDeletedName="TblAccHead1RowDeleted" msprop:Generator_RowClassName="TblAccHead1Row" msprop:Generator_UserTableName="TblAccHead1" msprop:Generator_RowEvArgName="TblAccHead1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAccCode" msprop:Generator_ColumnPropNameInRow="AccCode" msprop:Generator_ColumnPropNameInTable="AccCodeColumn" msprop:Generator_UserColumnName="AccCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Debit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDebit" msprop:Generator_ColumnPropNameInRow="Debit" msprop:Generator_ColumnPropNameInTable="DebitColumn" msprop:Generator_UserColumnName="Debit" type="xs:double" minOccurs="0" />
+              <xs:element name="Credit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_UserColumnName="Credit" type="xs:double" minOccurs="0" />
+              <xs:element name="AccHeadName" msprop:Generator_ColumnVarNameInTable="columnAccHeadName" msprop:Generator_ColumnPropNameInRow="AccHeadName" msprop:Generator_ColumnPropNameInTable="AccHeadNameColumn" msprop:Generator_UserColumnName="AccHeadName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Balac" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalac" msprop:Generator_ColumnPropNameInRow="Balac" msprop:Generator_ColumnPropNameInTable="BalacColumn" msprop:Generator_UserColumnName="Balac" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

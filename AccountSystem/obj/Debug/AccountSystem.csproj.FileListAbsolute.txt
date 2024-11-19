@@ -1,0 +1,1144 @@
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe.config
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\AccountSystem.pdb
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\Value.dll
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.About.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FindCustomer.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frm_FIS.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Find_Menu_Item.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frm_FindSale.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCustomer.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmFindVendors.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FrmIssue.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmMenuItem.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVendor.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Frm_findPurchase.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frm_find_issuerecord.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frm_find_salerecord.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Frm_parameters.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frm_Purchase.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Frm_Sale.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Frm_SaleA.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmItemSale.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PurchaseReturn.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSale.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe
+C:\Users\Zia\source\repos\AccountSystem\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\AccountSystem.exe
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\SergeUtils.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\Value.dll
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\Newtonsoft.Json.xml
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\bin\Debug\SergeUtils.pdb
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.csprojResolveAssemblyReference.cache
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.FindCustomer.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frm_FIS.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Find_Menu_Item.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frm_FindSale.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmCustomer.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmFindVendors.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.FrmIssue.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmMenuItem.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmVendor.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Frm_findPurchase.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frm_find_issuerecord.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frm_find_salerecord.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Frm_parameters.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frm_Purchase.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Frm_Sale.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Frm_SaleA.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmItemSale.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.frmSale.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.exe
+D:\Baadshah Tires Corporation\AccountSystem - Copy\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\SergeUtils.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\Value.dll
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\Newtonsoft.Json.xml
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\SergeUtils.pdb
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBRV.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBPV.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCRV.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCPV.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDashboard.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPayTerms.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseInvoice.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn2.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptSearchJVs.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rpCustomerWiseProfitability.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptStockReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Profitability.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptRegionWiseProfitability.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptPatternWiseProfitability.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCityReg.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimForm.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.InventoryTransfer.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTransferNote.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTiresClaim.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceWlkin.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptBLSheet.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmInventorySettings.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csprojResolveAssemblyReference.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\Value.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ChangePassword.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPaymenttoVendor.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDashboard.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPayTerms.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherPreview.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherPosting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimFormEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderStatusEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LadgerRpt2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FundTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.DayClosing.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.GeneralEntries.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LedgerReportUSD.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.RPTTIRECLAIMS.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptOrderStatus.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptEmployeeProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptMonthWiseSale.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptOverdueInvoices.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptCustomerBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptCashBankBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptPurchaseRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptSaleRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptReceiptsReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptVendorBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptSearchJVs.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rpCustomerWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptStockReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Profitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptRegionWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptPatternWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCityReg.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.InventoryTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTransferNote.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTiresClaim.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceWlkin.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptBLSheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmInventorySettings.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\bin\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\Baadshah Tires Corporation\AccountSystem\AccountSystem\obj\Debug\AccountSystem.rptStaffRecoverySheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.config
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Tulpep.NotificationWindow.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Value.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChangePassword.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProductionEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditPurchases.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCreateGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyBankCashReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashB1.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPaymenttoVendor.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashboard.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPayTerms.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPreview.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPosting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimFormEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDamage.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan0.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmMakeSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInwardGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispathGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmNonCons.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmOutwardGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDemandBook.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProduction.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmQuotations.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmRawMaterialRegistration.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderStatusEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.lissuance.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyProductReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptProductCostVariation.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyUpdate.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FundTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.DayClosing.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GeneralEntries.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReportUSD.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptInwardGatePassRegis.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDispatchRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBankReconciliation.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPaymentsDtl.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseSum.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSalenProduction.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleTaxReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport001.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStaffRecoverySheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReportRaw.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.RPTTIRECLAIMS.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOrderStatus.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptEmployeeProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptMonthWiseSale.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOverdueInvoices.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCustomerBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCashBankBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptReceiptsReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptVendorBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSearchJVs.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rpCustomerWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Profitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptRegionWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPatternWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCityReg.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.InventoryTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTransferNote.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTiresClaim.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceWlkin.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBLSheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInventorySettings.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfindRW.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.compiled
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrustInfo.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispatch.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPacketing.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC Construction Solution (Pvt) Ltd\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csprojAssemblyReference.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Tulpep.NotificationWindow.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Value.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.config
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChangePassword.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProductionEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPacketing.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditPurchases.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCreateGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispatch.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyBankCashReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashB1.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPaymenttoVendor.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCRV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCPV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashboard.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPayTerms.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPreview.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPosting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimFormEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDamage.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan0.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmMakeSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInwardGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispathGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmNonCons.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmOutwardGatePass.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDemandBook.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProduction.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmQuotations.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmRawMaterialRegistration.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderStatusEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.lissuance.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyProductReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptProductCostVariation.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyUpdate.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FundTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.DayClosing.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GeneralEntries.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReportUSD.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptInwardGatePassRegis.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDispatchRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBankReconciliation.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPaymentsDtl.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseSum.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSalenProduction.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleTaxReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport001.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStaffRecoverySheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReportRaw.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.RPTTIRECLAIMS.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOrderStatus.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptEmployeeProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptMonthWiseSale.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOverdueInvoices.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCustomerBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCashBankBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleRegister.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptReceiptsReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptVendorBalances.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSearchJVs.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rpCustomerWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Profitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptRegionWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPatternWiseProfitability.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCityReg.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.InventoryTransfer.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTransferNote.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTiresClaim.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceWlkin.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBLSheet.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInventorySettings.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfindRW.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.compiled
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrustInfo.xml
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.manifest
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.application
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement2.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReportDetials.resources
+D:\SourceTree\OneDrive\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csprojAssemblyReference.cache
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.config
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe.manifest
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.application
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.exe
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\AccountSystem.pdb
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.BonusSkins.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Tulpep.NotificationWindow.dll
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Data.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.Utils.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraBars.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraEditors.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraGrid.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraLayout.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\DevExpress.XtraPivotGrid.v10.1.Core.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.config
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPrintProductList.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmStrengthTest.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChangePassword.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.About.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.AccountChart.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProductionEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmlissuanceEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPacketing.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditSaleInvoice.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEditPurchases.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCreateGRN.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispatch.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyBankCashReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleTax.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReportDetials.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptWHT_On_Sup.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashB1.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPaymenttoVendor.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBRV.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBPV.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCRV.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCPV.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDashboard.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPayTerms.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPreview.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherPosting.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimFormEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDamage.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan0.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmMakeSaleInvoice.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInwardGatePass.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDispathGatePass.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmNonCons.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmOutwardGatePass.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDemandBook.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDailyProduction.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmQuotations.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmRawMaterialRegistration.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseInvoice.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderStatusEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.lissuance.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyProductReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleOrder.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptProductCostVariation.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDailyUpdate.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FundTransfer.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.DayClosing.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GeneralEntries.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReportUSD.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfind.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptInwardGatePassRegis.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptDispatchRegister.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBankReconciliation.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPaymentsDtl.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseSum.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSalenProduction.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleTaxReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleReport001.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStaffRecoverySheet.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReportRaw.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.RPTTIRECLAIMS.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOrderStatus.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptEmployeeProfitability.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptMonthWiseSale.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptOverdueInvoices.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCustomerBalances.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptCashBankBalances.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPurchaseRegister.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSaleRegister.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptReceiptsReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptVendorBalances.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptSearchJVs.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rpCustomerWiseProfitability.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptStockReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Profitability.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptRegionWiseProfitability.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptPatternWiseProfitability.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCityReg.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.frmClaimForm.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.InventoryTransfer.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTransferNote.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptTiresClaim.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseReturn.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoiceWlkin.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleReturn.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRNReturn.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleRetrun.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptSaleInvoice.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptBLSheet.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmSaleInvoice.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRN.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallanEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmDeliveryChallan2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrderEdit.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptGRN.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptDeliveryChallan.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.rptIncomeStatement.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BalanceShee.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BarcodPrinting.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BRVReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.BVReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ChartsView.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FixedAsset.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcHead.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHead.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmAcSubHeadED.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmBVoucher.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmChartAccounts.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCompany.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCustomers.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmCVoucher.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEmployees.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAcc.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmEntryAccED.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGPVReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmGRVReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmJVReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.FrmMain.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPrintBill.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmStores.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmUsers.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVendors.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucher.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherED.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVoucherN.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmVouchers.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmYearCls.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.GLadgerRpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.IncomStatView2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Discountrpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmProducts.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmPurchaseOrder.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmInventorySettings.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.frmfindRW.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProductSheetList.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PurchWiseRpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Inventory.rptPurchaseOrder.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Return.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SaleWiseRpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SchemeRpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptDetails.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.StockRptParm2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LadgerRpt.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LedgerReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.LoginForm.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.MonlyExp.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.PO_Invioce.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLadgar.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.ProdLedgerReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Properties.Resources.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Regist.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SalesmanProduct.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.Sale_Invce.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.SplashScreen.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrBlanRptView2.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TriBalancParm.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSManV.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.WithSReport.resources
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.GenerateResource.cache
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.licenses
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.cache
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\RdlCompile.compiled
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CoreCompileInputs.cache
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.TrustInfo.xml
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe.manifest
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.application
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.csproj.CopyComplete
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.exe
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\obj\Debug\AccountSystem.pdb
+D:\Projects\VS Projects\Desktop Apps\NLC\NLC Construction Solution (Pvt) Ltd\AccountSystem\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
